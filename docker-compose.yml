@@ -1,0 +1,30 @@
+﻿services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: datatalk-postgres
+    environment:
+      POSTGRES_USER: datatalk_user
+      POSTGRES_PASSWORD: datatalk_password
+      POSTGRES_DB: northwind
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/northwind.sql:/docker-entrypoint-initdb.d/01-northwind.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U datatalk_user -d northwind"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - datatalk-network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  datatalk-network:
+    driver: bridge
+
