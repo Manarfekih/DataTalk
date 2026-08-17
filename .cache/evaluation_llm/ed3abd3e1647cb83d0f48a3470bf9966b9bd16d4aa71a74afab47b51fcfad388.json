@@ -1,0 +1,7 @@
+{
+  "original_question": "Show products that are discontinued.",
+  "corrected_question": "Show all discontinued products",
+  "intent": "Retrieve a list of discontinued products",
+  "needs_clarification": false,
+  "clarification_question": null
+}

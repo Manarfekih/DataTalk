@@ -1,0 +1,8 @@
+{
+  "relevant_tables": [
+    "customers",
+    "orders",
+    "order_details"
+  ],
+  "reasoning": "The 'customers' table is needed to identify customer entities. 'orders' links customers to their orders via customer_id. 'order_details' provides the unit_price, quantity, and discount data required to calculate total spending per customer. These tables are essential for aggregating spending amounts and ranking customers."
+}

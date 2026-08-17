@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT p.product_name AS product_name, s.company_name AS supplier_company FROM products p JOIN suppliers s ON p.supplier_id = s.supplier_id"
+}

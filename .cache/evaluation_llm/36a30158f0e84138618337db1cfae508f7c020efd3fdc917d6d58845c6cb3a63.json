@@ -1,0 +1,7 @@
+{
+  "original_question": "Find the maximum product price.",
+  "corrected_question": "What is the maximum product price?",
+  "intent": "Determine the highest product price in the dataset",
+  "needs_clarification": false,
+  "clarification_question": null
+}

@@ -1,0 +1,7 @@
+{
+  "original_question": "List all products with their category names.",
+  "corrected_question": "List all products with their category names.",
+  "intent": "Retrieve product data along with category names",
+  "needs_clarification": false,
+  "clarification_question": null
+}

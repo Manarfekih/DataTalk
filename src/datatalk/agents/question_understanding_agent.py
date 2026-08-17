@@ -48,11 +48,11 @@ class QuestionUnderstandingAgent:
             temperature=0.1,
         )
 
+        result = result.model_copy(update={"original_question": question})
 
         logger.info(
             "Question intent detected: %s",
             result.intent,
         )
-
 
         return result

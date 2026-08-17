@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "customers"
+  ],
+  "reasoning": "The 'orders' table is needed to count the number of orders, and the 'customers' table is required to associate each order count with the corresponding customer (to answer 'each customer')."
+}

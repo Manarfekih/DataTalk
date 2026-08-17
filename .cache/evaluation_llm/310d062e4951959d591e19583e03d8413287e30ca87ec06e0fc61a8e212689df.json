@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "customers",
+    "orders"
+  ],
+  "reasoning": "To count the total number of orders, the 'orders' table is needed. To identify 'each customer' and link orders to them, the 'customers' table is required, as 'orders' contains 'customer_id' which is a foreign key to 'customers'."
+}

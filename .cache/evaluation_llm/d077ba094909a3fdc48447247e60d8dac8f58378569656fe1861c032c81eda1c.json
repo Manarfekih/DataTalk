@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "categories"
+  ],
+  "reasoning": "The 'categories' table contains the category names and descriptions directly. No other tables are needed since the question simply requires listing all categories without filtering, joining, or additional calculations."
+}

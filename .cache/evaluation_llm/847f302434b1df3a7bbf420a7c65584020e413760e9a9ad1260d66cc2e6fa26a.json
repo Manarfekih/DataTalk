@@ -1,0 +1,7 @@
+{
+  "original_question": "",
+  "corrected_question": "What is the total number of orders for each customer?",
+  "intent": "Count the total number of orders for each individual customer.",
+  "needs_clarification": false,
+  "clarification_question": null
+}

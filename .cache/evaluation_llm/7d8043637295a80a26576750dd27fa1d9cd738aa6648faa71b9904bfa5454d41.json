@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "orders"
+  ],
+  "reasoning": "The 'orders' table contains the 'ship_country' column which directly indicates the country where the order was shipped. Filtering for 'France' or 'Germany' in this column allows identifying the required orders. No other tables are needed since the necessary information is fully contained in 'orders'."
+}

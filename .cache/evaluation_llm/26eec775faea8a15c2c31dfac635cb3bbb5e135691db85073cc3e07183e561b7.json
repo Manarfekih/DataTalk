@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "orders"
+  ],
+  "reasoning": "The 'orders' table contains the 'ship_city' column which is directly used to filter orders shipped to London. No other tables are needed as the question only requires information about shipment locations."
+}

@@ -1,0 +1,7 @@
+{
+  "original_question": "How many orders exist?",
+  "corrected_question": "What is the total number of orders?",
+  "intent": "Count all orders",
+  "needs_clarification": false,
+  "clarification_question": null
+}

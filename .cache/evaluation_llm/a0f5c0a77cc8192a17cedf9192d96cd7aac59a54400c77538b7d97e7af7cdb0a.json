@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "customers"
+  ],
+  "reasoning": "To find the 'total number of orders', we need the 'orders' table. To associate these orders 'for each customer' and identify the customers, we need the 'customers' table to join with 'orders' on 'customer_id'."
+}

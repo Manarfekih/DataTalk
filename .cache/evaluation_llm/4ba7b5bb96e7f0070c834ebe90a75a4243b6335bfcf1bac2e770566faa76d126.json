@@ -1,0 +1,7 @@
+{
+  "original_question": "How many products exist?",
+  "corrected_question": "How many products exist?",
+  "intent": "Count the number of products",
+  "needs_clarification": false,
+  "clarification_question": null
+}

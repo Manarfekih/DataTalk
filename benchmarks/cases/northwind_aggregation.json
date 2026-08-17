@@ -1,0 +1,90 @@
+[
+    {
+        "id": "agg_001",
+        "category": "aggregation",
+        "question": "How many orders does each customer have?",
+        "expected_sql": "SELECT customer_id, COUNT(order_id) FROM orders GROUP BY customer_id",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_002",
+        "category": "aggregation",
+        "question": "What is the average product price?",
+        "expected_sql": "SELECT AVG(unit_price) FROM products",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_003",
+        "category": "aggregation",
+        "question": "What is the total number of products per category?",
+        "expected_sql": "SELECT category_id, COUNT(product_id) FROM products GROUP BY category_id",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_004",
+        "category": "aggregation",
+        "question": "Calculate the total sales amount.",
+        "expected_sql": "SELECT SUM(unit_price * quantity) FROM order_details",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_005",
+        "category": "aggregation",
+        "question": "Find the maximum product price.",
+        "expected_sql": "SELECT MAX(unit_price) FROM products",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_006",
+        "category": "aggregation",
+        "question": "Find the cheapest product price.",
+        "expected_sql": "SELECT MIN(unit_price) FROM products",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_007",
+        "category": "aggregation",
+        "question": "How many employees work in each city?",
+        "expected_sql": "SELECT city, COUNT(employee_id) FROM employees GROUP BY city",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_008",
+        "category": "aggregation",
+        "question": "What is the average number of units in stock?",
+        "expected_sql": "SELECT AVG(units_in_stock) FROM products",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_009",
+        "category": "aggregation",
+        "question": "Show total orders per year.",
+        "expected_sql": "SELECT YEAR(order_date), COUNT(order_id) FROM orders GROUP BY YEAR(order_date)",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "agg_010",
+        "category": "aggregation",
+        "question": "Which category contains the most products?",
+        "expected_sql": "SELECT category_id, COUNT(product_id) FROM products GROUP BY category_id ORDER BY COUNT(product_id) DESC LIMIT 1",
+        "expected_rows": []
+    }
+]

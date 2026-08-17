@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "customers"
+  ],
+  "reasoning": "The 'customers' table contains the 'country' column which directly indicates the country where each customer is located. Filtering this table for 'country = France' answers the question. No other tables are needed since the question does not require joins, calculations, or additional data."
+}

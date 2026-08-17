@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "employees"
+  ],
+  "reasoning": "The 'employees' table contains the 'employee_id' to count employees and the 'city' column to group them by city."
+}

@@ -1,0 +1,57 @@
+[
+    {
+        "id": "basic_001",
+        "category": "basic",
+        "question": "How many customers are there?",
+        "expected_sql": "SELECT COUNT(customer_id) FROM customers",
+        "expected_rows": [
+            {
+                "count": 91
+            }
+        ]
+    },
+
+
+    {
+        "id": "basic_002",
+        "category": "basic",
+        "question": "How many products exist?",
+        "expected_sql": "SELECT COUNT(product_id) FROM products",
+        "expected_rows": [
+            {
+                "count": 77
+            }
+        ]
+    },
+
+
+    {
+        "id": "basic_003",
+        "category": "basic",
+        "question": "List all customer company names.",
+        "expected_sql": "SELECT company_name FROM customers",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "basic_004",
+        "category": "basic",
+        "question": "Show all categories.",
+        "expected_sql": "SELECT category_name FROM categories",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "basic_005",
+        "category": "basic",
+        "question": "How many orders exist?",
+        "expected_sql": "SELECT COUNT(order_id) FROM orders",
+        "expected_rows": [
+            {
+                "count": 830
+            }
+        ]
+    }
+]

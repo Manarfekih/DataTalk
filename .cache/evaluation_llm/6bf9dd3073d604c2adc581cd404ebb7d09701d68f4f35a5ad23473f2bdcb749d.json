@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT p.product_id, p.product_name, COUNT(*) AS order_count FROM order_details od JOIN products p ON od.product_id = p.product_id GROUP BY p.product_id, p.product_name HAVING COUNT(*) > 100;"
+}

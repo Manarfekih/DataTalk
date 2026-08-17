@@ -6,6 +6,7 @@ import logging
 from fastapi import FastAPI
 
 from .routes import router
+from .observability_routes import router as obs_router
 
 from datatalk.core import container
 
@@ -30,9 +31,8 @@ app = FastAPI(
 
 
 
-app.include_router(
-    router
-)
+app.include_router(router)
+app.include_router(obs_router)
 
 
 @app.on_event("startup")
@@ -64,6 +64,3 @@ def shutdown_event() -> None:
 
 
 
-app.include_router(
-    router
-)

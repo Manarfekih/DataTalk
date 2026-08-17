@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "customers"
+  ],
+  "reasoning": "The 'orders' table is needed to count the number of orders per customer, as it contains the customer_id and order_id. The 'customers' table is required to identify the customer's name or details (since the question asks 'which customer'). Other tables like order_details, employees, or regions are not necessary for counting orders or identifying customers."
+}

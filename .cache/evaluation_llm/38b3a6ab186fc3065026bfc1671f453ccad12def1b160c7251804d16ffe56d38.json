@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "order_details",
+    "products"
+  ],
+  "reasoning": "The 'order_details' table is needed to calculate revenue per product using unit_price, quantity, and discount. The 'products' table is required to identify the product names or IDs associated with these sales. No other tables are necessary for this calculation."
+}

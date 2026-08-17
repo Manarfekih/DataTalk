@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "order_details"
+  ],
+  "reasoning": "To calculate the total sales amount, we need the unit price, quantity, and discount for each item sold. All this information is available in the 'order_details' table. The sales amount for each item can be calculated as (unit_price * quantity * (1 - discount)), and then summed up to get the total sales."
+}

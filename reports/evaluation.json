@@ -1,0 +1,476 @@
+{
+    "summary": {
+        "generated_at": "2026-08-13T03:03:00.422796+00:00",
+        "total_questions": 1,
+        "text_to_sql_accuracy": 0.0,
+        "execution_accuracy": 1.0,
+        "retry_success_rate": 0.0,
+        "first_pass_accuracy": 1.0,
+        "average_retry_count": 0.0
+    },
+    "results": [
+        {
+            "case_id": "agg_001",
+            "category": "aggregation",
+            "question": "How many orders does each customer have?",
+            "generated_sql": "SELECT c.customer_id, c.company_name, COUNT(o.order_id) AS total_orders FROM customers AS c JOIN orders AS o ON c.customer_id = o.customer_id GROUP BY c.customer_id, c.company_name ORDER BY c.company_name",
+            "expected_sql": "SELECT customer_id, COUNT(order_id) FROM orders GROUP BY customer_id",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "ALFKI",
+                    "company_name": "Alfreds Futterkiste",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "ANATR",
+                    "company_name": "Ana Trujillo Emparedados y helados",
+                    "total_orders": 4
+                },
+                {
+                    "customer_id": "ANTON",
+                    "company_name": "Antonio Moreno Taquería",
+                    "total_orders": 7
+                },
+                {
+                    "customer_id": "AROUT",
+                    "company_name": "Around the Horn",
+                    "total_orders": 13
+                },
+                {
+                    "customer_id": "BSBEV",
+                    "company_name": "B's Beverages",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "BERGS",
+                    "company_name": "Berglunds snabbköp",
+                    "total_orders": 18
+                },
+                {
+                    "customer_id": "BLAUS",
+                    "company_name": "Blauer See Delikatessen",
+                    "total_orders": 7
+                },
+                {
+                    "customer_id": "BLONP",
+                    "company_name": "Blondesddsl père et fils",
+                    "total_orders": 11
+                },
+                {
+                    "customer_id": "BONAP",
+                    "company_name": "Bon app'",
+                    "total_orders": 17
+                },
+                {
+                    "customer_id": "BOTTM",
+                    "company_name": "Bottom-Dollar Markets",
+                    "total_orders": 14
+                },
+                {
+                    "customer_id": "BOLID",
+                    "company_name": "Bólido Comidas preparadas",
+                    "total_orders": 3
+                },
+                {
+                    "customer_id": "CACTU",
+                    "company_name": "Cactus Comidas para llevar",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "CENTC",
+                    "company_name": "Centro comercial Moctezuma",
+                    "total_orders": 1
+                },
+                {
+                    "customer_id": "CHOPS",
+                    "company_name": "Chop-suey Chinese",
+                    "total_orders": 8
+                },
+                {
+                    "customer_id": "COMMI",
+                    "company_name": "Comércio Mineiro",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "CONSH",
+                    "company_name": "Consolidated Holdings",
+                    "total_orders": 3
+                },
+                {
+                    "customer_id": "WANDK",
+                    "company_name": "Die Wandernde Kuh",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "DRACD",
+                    "company_name": "Drachenblut Delikatessen",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "DUMON",
+                    "company_name": "Du monde entier",
+                    "total_orders": 4
+                },
+                {
+                    "customer_id": "EASTC",
+                    "company_name": "Eastern Connection",
+                    "total_orders": 8
+                },
+                {
+                    "customer_id": "ERNSH",
+                    "company_name": "Ernst Handel",
+                    "total_orders": 30
+                },
+                {
+                    "customer_id": "FAMIA",
+                    "company_name": "Familia Arquibaldo",
+                    "total_orders": 7
+                },
+                {
+                    "customer_id": "FOLIG",
+                    "company_name": "Folies gourmandes",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "FOLKO",
+                    "company_name": "Folk och fä HB",
+                    "total_orders": 19
+                },
+                {
+                    "customer_id": "FRANR",
+                    "company_name": "France restauration",
+                    "total_orders": 3
+                },
+                {
+                    "customer_id": "FRANS",
+                    "company_name": "Franchi S.p.A.",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "FRANK",
+                    "company_name": "Frankenversand",
+                    "total_orders": 15
+                },
+                {
+                    "customer_id": "FURIB",
+                    "company_name": "Furia Bacalhau e Frutos do Mar",
+                    "total_orders": 8
+                },
+                {
+                    "customer_id": "GROSR",
+                    "company_name": "GROSELLA-Restaurante",
+                    "total_orders": 2
+                },
+                {
+                    "customer_id": "GALED",
+                    "company_name": "Galería del gastrónomo",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "GODOS",
+                    "company_name": "Godos Cocina Típica",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "GOURL",
+                    "company_name": "Gourmet Lanchonetes",
+                    "total_orders": 9
+                },
+                {
+                    "customer_id": "GREAL",
+                    "company_name": "Great Lakes Food Market",
+                    "total_orders": 11
+                },
+                {
+                    "customer_id": "HILAA",
+                    "company_name": "HILARION-Abastos",
+                    "total_orders": 18
+                },
+                {
+                    "customer_id": "HANAR",
+                    "company_name": "Hanari Carnes",
+                    "total_orders": 14
+                },
+                {
+                    "customer_id": "HUNGC",
+                    "company_name": "Hungry Coyote Import Store",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "HUNGO",
+                    "company_name": "Hungry Owl All-Night Grocers",
+                    "total_orders": 19
+                },
+                {
+                    "customer_id": "ISLAT",
+                    "company_name": "Island Trading",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "KOENE",
+                    "company_name": "Königlich Essen",
+                    "total_orders": 14
+                },
+                {
+                    "customer_id": "LILAS",
+                    "company_name": "LILA-Supermercado",
+                    "total_orders": 14
+                },
+                {
+                    "customer_id": "LINOD",
+                    "company_name": "LINO-Delicateses",
+                    "total_orders": 12
+                },
+                {
+                    "customer_id": "LACOR",
+                    "company_name": "La corne d'abondance",
+                    "total_orders": 4
+                },
+                {
+                    "customer_id": "LAMAI",
+                    "company_name": "La maison d'Asie",
+                    "total_orders": 14
+                },
+                {
+                    "customer_id": "LAUGB",
+                    "company_name": "Laughing Bacchus Wine Cellars",
+                    "total_orders": 3
+                },
+                {
+                    "customer_id": "LAZYK",
+                    "company_name": "Lazy K Kountry Store",
+                    "total_orders": 2
+                },
+                {
+                    "customer_id": "LEHMS",
+                    "company_name": "Lehmanns Marktstand",
+                    "total_orders": 15
+                },
+                {
+                    "customer_id": "LETSS",
+                    "company_name": "Let's Stop N Shop",
+                    "total_orders": 4
+                },
+                {
+                    "customer_id": "LONEP",
+                    "company_name": "Lonesome Pine Restaurant",
+                    "total_orders": 8
+                },
+                {
+                    "customer_id": "MAGAA",
+                    "company_name": "Magazzini Alimentari Riuniti",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "MAISD",
+                    "company_name": "Maison Dewey",
+                    "total_orders": 7
+                },
+                {
+                    "customer_id": "MORGK",
+                    "company_name": "Morgenstern Gesundkost",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "MEREP",
+                    "company_name": "Mère Paillarde",
+                    "total_orders": 13
+                },
+                {
+                    "customer_id": "NORTS",
+                    "company_name": "North/South",
+                    "total_orders": 3
+                },
+                {
+                    "customer_id": "OCEAN",
+                    "company_name": "Océano Atlántico Ltda.",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "OLDWO",
+                    "company_name": "Old World Delicatessen",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "OTTIK",
+                    "company_name": "Ottilies Käseladen",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "PERIC",
+                    "company_name": "Pericles Comidas clásicas",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "PICCO",
+                    "company_name": "Piccolo und mehr",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "PRINI",
+                    "company_name": "Princesa Isabel Vinhos",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "QUICK",
+                    "company_name": "QUICK-Stop",
+                    "total_orders": 28
+                },
+                {
+                    "customer_id": "QUEDE",
+                    "company_name": "Que Delícia",
+                    "total_orders": 9
+                },
+                {
+                    "customer_id": "QUEEN",
+                    "company_name": "Queen Cozinha",
+                    "total_orders": 13
+                },
+                {
+                    "customer_id": "RANCH",
+                    "company_name": "Rancho grande",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "RATTC",
+                    "company_name": "Rattlesnake Canyon Grocery",
+                    "total_orders": 18
+                },
+                {
+                    "customer_id": "REGGC",
+                    "company_name": "Reggiani Caseifici",
+                    "total_orders": 12
+                },
+                {
+                    "customer_id": "RICAR",
+                    "company_name": "Ricardo Adocicados",
+                    "total_orders": 11
+                },
+                {
+                    "customer_id": "RICSU",
+                    "company_name": "Richter Supermarkt",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "ROMEY",
+                    "company_name": "Romero y tomillo",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "SANTG",
+                    "company_name": "Santé Gourmet",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "SAVEA",
+                    "company_name": "Save-a-lot Markets",
+                    "total_orders": 31
+                },
+                {
+                    "customer_id": "SEVES",
+                    "company_name": "Seven Seas Imports",
+                    "total_orders": 9
+                },
+                {
+                    "customer_id": "SIMOB",
+                    "company_name": "Simons bistro",
+                    "total_orders": 7
+                },
+                {
+                    "customer_id": "SPLIR",
+                    "company_name": "Split Rail Beer & Ale",
+                    "total_orders": 9
+                },
+                {
+                    "customer_id": "SPECD",
+                    "company_name": "Spécialités du monde",
+                    "total_orders": 4
+                },
+                {
+                    "customer_id": "SUPRD",
+                    "company_name": "Suprêmes délices",
+                    "total_orders": 12
+                },
+                {
+                    "customer_id": "THEBI",
+                    "company_name": "The Big Cheese",
+                    "total_orders": 4
+                },
+                {
+                    "customer_id": "THECR",
+                    "company_name": "The Cracker Box",
+                    "total_orders": 3
+                },
+                {
+                    "customer_id": "TOMSP",
+                    "company_name": "Toms Spezialitäten",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "TORTU",
+                    "company_name": "Tortuga Restaurante",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "TRADH",
+                    "company_name": "Tradição Hipermercados",
+                    "total_orders": 6
+                },
+                {
+                    "customer_id": "TRAIH",
+                    "company_name": "Trail's Head Gourmet Provisioners",
+                    "total_orders": 3
+                },
+                {
+                    "customer_id": "VAFFE",
+                    "company_name": "Vaffeljernet",
+                    "total_orders": 11
+                },
+                {
+                    "customer_id": "VICTE",
+                    "company_name": "Victuailles en stock",
+                    "total_orders": 10
+                },
+                {
+                    "customer_id": "VINET",
+                    "company_name": "Vins et alcools Chevalier",
+                    "total_orders": 5
+                },
+                {
+                    "customer_id": "WARTH",
+                    "company_name": "Wartian Herkku",
+                    "total_orders": 15
+                },
+                {
+                    "customer_id": "WELLI",
+                    "company_name": "Wellington Importadora",
+                    "total_orders": 9
+                },
+                {
+                    "customer_id": "WHITC",
+                    "company_name": "White Clover Markets",
+                    "total_orders": 14
+                },
+                {
+                    "customer_id": "WILMK",
+                    "company_name": "Wilman Kala",
+                    "total_orders": 7
+                },
+                {
+                    "customer_id": "WOLZA",
+                    "company_name": "Wolski  Zajazd",
+                    "total_orders": 7
+                }
+            ],
+            "expected_rows": [],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 1737.8075001761317,
+            "error": null
+        }
+    ]
+}

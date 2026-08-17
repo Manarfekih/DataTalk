@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT company_name AS company_name FROM customers"
+}

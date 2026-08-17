@@ -1,0 +1,7 @@
+{
+  "original_question": "Find the cheapest product price.",
+  "corrected_question": "Find the minimum product price.",
+  "intent": "Identify the lowest product price in the dataset",
+  "needs_clarification": false,
+  "clarification_question": null
+}

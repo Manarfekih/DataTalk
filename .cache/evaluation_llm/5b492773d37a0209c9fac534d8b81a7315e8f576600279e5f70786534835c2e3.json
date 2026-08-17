@@ -1,0 +1,7 @@
+{
+  "original_question": "",
+  "corrected_question": "What is the total number of employees in each city?",
+  "intent": "Count employees per city",
+  "needs_clarification": false,
+  "clarification_question": null
+}

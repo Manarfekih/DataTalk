@@ -1,0 +1,7 @@
+{
+  "original_question": "Find orders shipped to France or Germany.",
+  "corrected_question": "Find orders shipped to France or Germany.",
+  "intent": "Retrieve orders shipped to France or Germany",
+  "needs_clarification": false,
+  "clarification_question": null
+}

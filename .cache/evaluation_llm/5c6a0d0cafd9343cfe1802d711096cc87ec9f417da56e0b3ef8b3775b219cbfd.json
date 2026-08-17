@@ -1,0 +1,7 @@
+{
+  "original_question": "Find the total sales for each product.",
+  "corrected_question": "Calculate the total sales for each product.",
+  "intent": "Aggregate sales data by product",
+  "needs_clarification": false,
+  "clarification_question": null
+}

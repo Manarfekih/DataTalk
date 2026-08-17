@@ -1,0 +1,7 @@
+{
+  "original_question": "What is the average order value?",
+  "corrected_question": "What is the average order value?",
+  "intent": "Calculate the average order value metric",
+  "needs_clarification": false,
+  "clarification_question": null
+}

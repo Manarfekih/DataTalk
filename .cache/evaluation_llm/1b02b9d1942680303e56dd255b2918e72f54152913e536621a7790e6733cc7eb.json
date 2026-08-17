@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the 'units_in_stock' column which is directly needed to calculate the average number of units in stock. No other tables are required for this calculation as there is no filtering, grouping, or joining needed."
+}

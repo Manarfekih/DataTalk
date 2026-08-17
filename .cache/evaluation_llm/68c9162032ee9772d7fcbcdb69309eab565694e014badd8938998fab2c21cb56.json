@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "orders"
+  ],
+  "reasoning": "The 'orders' table contains the 'order_date' column needed to determine the year of each order. This is essential for grouping and counting orders per year. No other tables are required since the question only involves order counts and dates."
+}

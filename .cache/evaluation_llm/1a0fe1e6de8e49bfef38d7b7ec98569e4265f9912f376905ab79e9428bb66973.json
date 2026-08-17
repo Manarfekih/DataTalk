@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "customers"
+  ],
+  "reasoning": "The 'customers' table contains the 'company_name' column which is directly used for filtering customers whose company name starts with 'A'. No other tables are required as the question does not involve joins, calculations, or additional filtering criteria."
+}

@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "order_details",
+    "products"
+  ],
+  "reasoning": "The 'order_details' table is needed to count the quantity of each product ordered, and the 'products' table is required to identify the product names. These tables together allow calculating the total orders per product and filtering those with more than 100 orders."
+}

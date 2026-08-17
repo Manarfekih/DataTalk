@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "customers"
+  ],
+  "reasoning": "The 'customers' table contains the 'country' column which is directly used to filter customers from Germany. No other tables are required as the country information is explicitly stored in the customers table."
+}

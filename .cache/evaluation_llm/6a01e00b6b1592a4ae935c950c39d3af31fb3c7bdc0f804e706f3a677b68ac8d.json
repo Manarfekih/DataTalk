@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "customers"
+  ],
+  "reasoning": "The 'orders' table contains the customer_id which links to the 'customers' table. The 'customers' table provides the 'country' field needed to determine which countries generated the highest number of orders. The 'orders' table is necessary to count the number of orders per country."
+}

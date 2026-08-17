@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "products",
+    "suppliers"
+  ],
+  "reasoning": "The 'products' table contains supplier_id which links to the 'suppliers' table. These tables together provide the direct relationship between suppliers and products. Other tables are not needed as there's no indirect relationship or calculation required for this question."
+}

@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT categories.category_name, COUNT(*) AS total_products FROM products JOIN categories ON products.category_id = categories.category_id GROUP BY categories.category_id, categories.category_name;"
+}

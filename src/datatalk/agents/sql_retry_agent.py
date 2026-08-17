@@ -50,17 +50,14 @@ class SQLRetryAgent:
         self._llm = llm
         self._sql_safety = SQLSafety()
 
-    # =====================================================
+    
     # Retry Decision
-    # =====================================================
 
     def should_retry(self, error: str) -> bool:
         error = error.lower()
         return not any(keyword in error for keyword in self.NON_RETRYABLE_ERRORS)
 
-    # =====================================================
     # Generate SQL Correction
-    # =====================================================
 
     def retry(
         self,
@@ -120,10 +117,7 @@ class SQLRetryAgent:
             temperature=0.0,
         )
 
-    # =====================================================
-    # Format Retry History
-    # =====================================================
-
+    
     @staticmethod
     def _format_history(history: list[RetryAttempt]) -> str:
         if not history:
@@ -164,10 +158,7 @@ Changes:
 {changes}
 """.strip()
 
-    # =====================================================
-    # Format Chroma Memory
-    # =====================================================
-
+  
     @staticmethod
     def _format_memory(memory: list[SQLExperience]) -> str:
         if not memory:

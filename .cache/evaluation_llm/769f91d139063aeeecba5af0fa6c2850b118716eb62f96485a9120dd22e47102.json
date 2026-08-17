@@ -1,0 +1,7 @@
+{
+  "original_question": "Which countries generate the highest number of orders?",
+  "corrected_question": "Which countries generate the highest number of orders?",
+  "intent": "Identify top countries by order count",
+  "needs_clarification": false,
+  "clarification_question": null
+}

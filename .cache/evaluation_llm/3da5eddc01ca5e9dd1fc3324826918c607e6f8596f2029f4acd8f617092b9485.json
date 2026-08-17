@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT DISTINCT c.customer_id, c.company_name, c.contact_name, c.contact_title, c.address, c.city, c.region, c.postal_code, c.country, c.phone, c.fax FROM customers c JOIN orders o ON c.customer_id = o.customer_id JOIN order_details od ON o.order_id = od.order_id JOIN products p ON od.product_id = p.product_id JOIN categories cat ON p.category_id = cat.category_id WHERE cat.category_name = 'Beverages'"
+}

@@ -44,7 +44,6 @@ class ExplanationAgent:
 
 
 
-        # No results case
 
         if not rows:
 

@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "products",
+    "categories"
+  ],
+  "reasoning": "The 'products' table contains product information, and the 'categories' table provides category names. These tables must be joined via the category_id foreign key to list products with their corresponding category names."
+}

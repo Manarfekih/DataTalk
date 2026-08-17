@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT MAX(unit_price) AS max_price FROM products"
+}

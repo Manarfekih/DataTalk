@@ -1,0 +1,7 @@
+{
+  "original_question": "List products with stock below 20 units.",
+  "corrected_question": "List products where stock is below 20 units.",
+  "intent": "Filter products by stock quantity threshold",
+  "needs_clarification": false,
+  "clarification_question": null
+}

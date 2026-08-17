@@ -1,0 +1,7 @@
+{
+  "original_question": "What is the best selling product?",
+  "corrected_question": "What is the best selling product?",
+  "intent": "Identify the top-selling product based on sales metrics",
+  "needs_clarification": false,
+  "clarification_question": null
+}

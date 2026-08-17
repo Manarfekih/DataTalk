@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class QuestionUnderstandingOutput(BaseModel):
 
-    original_question: str
+    original_question: str = ""
 
     corrected_question: str
 

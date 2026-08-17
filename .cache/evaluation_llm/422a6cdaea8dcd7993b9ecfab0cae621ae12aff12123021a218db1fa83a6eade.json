@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "customers",
+    "orders"
+  ],
+  "reasoning": "The 'customers' table provides customer information, and the 'orders' table is needed to check if a customer has placed any orders. Customers who never placed an order are identified by checking for the absence of matching entries in the orders table."
+}

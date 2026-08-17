@@ -1,0 +1,7 @@
+{
+  "original_question": "What are the top customers by total spending?",
+  "corrected_question": "What are the top customers by total spending?",
+  "intent": "Identify customers with the highest total spending",
+  "needs_clarification": false,
+  "clarification_question": null
+}

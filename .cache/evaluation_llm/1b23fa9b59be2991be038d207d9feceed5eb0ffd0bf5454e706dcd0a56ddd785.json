@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the 'unit_price' column needed to filter products with a price greater than 50. No other tables are required since the question only involves product pricing data."
+}

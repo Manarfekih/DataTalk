@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "customers"
+  ],
+  "reasoning": "The 'customers' table contains the 'company_name' column directly required to answer the question. No other tables are needed as there is no filtering, calculation, or joining required to simply list all customer company names."
+}

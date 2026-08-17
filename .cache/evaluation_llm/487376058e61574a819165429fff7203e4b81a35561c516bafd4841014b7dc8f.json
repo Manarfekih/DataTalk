@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "employees"
+  ],
+  "reasoning": "The 'employees' table contains the 'city' column which is directly needed to determine the city where each employee works. No other tables are required as the question only involves counting employees per city, which is fully captured in the employees table."
+}

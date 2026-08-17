@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "products",
+    "categories"
+  ],
+  "reasoning": "The 'products' table contains product data including the category_id, while the 'categories' table provides category names. To determine which category has the most products, we need to count products per category (via category_id) and join with categories to identify the category name."
+}

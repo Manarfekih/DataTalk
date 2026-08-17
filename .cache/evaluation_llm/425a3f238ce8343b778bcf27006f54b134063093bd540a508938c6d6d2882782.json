@@ -1,0 +1,7 @@
+{
+  "original_question": "Which suppliers provide each product?",
+  "corrected_question": "Which suppliers are associated with each product?",
+  "intent": "Identify suppliers for each product",
+  "needs_clarification": false,
+  "clarification_question": null
+}

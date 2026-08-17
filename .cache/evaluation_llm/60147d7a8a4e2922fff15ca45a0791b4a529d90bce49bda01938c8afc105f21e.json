@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the 'unit_price' column, which is directly needed to determine the price of each product. Since the question asks for the three most expensive products, the unit_price from the products table is sufficient for this calculation. No other tables are required as there is no need for filtering, joining, or additional calculations beyond retrieving product prices."
+}

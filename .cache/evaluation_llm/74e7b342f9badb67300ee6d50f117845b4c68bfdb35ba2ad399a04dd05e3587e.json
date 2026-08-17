@@ -1,0 +1,7 @@
+{
+  "original_question": "Find all employees hired after 1993.",
+  "corrected_question": "Find all employees hired after January 1, 1993.",
+  "intent": "Retrieve employee records hired after a specific date",
+  "needs_clarification": false,
+  "clarification_question": null
+}

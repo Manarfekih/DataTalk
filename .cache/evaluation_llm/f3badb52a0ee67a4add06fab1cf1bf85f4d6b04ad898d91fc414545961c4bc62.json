@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT MIN(unit_price) AS minimum_price FROM products"
+}

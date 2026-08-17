@@ -1,0 +1,90 @@
+[
+    {
+        "id": "join_001",
+        "category": "join",
+        "question": "Which customers have placed orders?",
+        "expected_sql": "SELECT DISTINCT customers.company_name FROM customers JOIN orders ON customers.customer_id = orders.customer_id",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_002",
+        "category": "join",
+        "question": "How many orders has each customer placed?",
+        "expected_sql": "SELECT customers.company_name, COUNT(orders.order_id) FROM customers JOIN orders ON customers.customer_id = orders.customer_id GROUP BY customers.company_name",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_003",
+        "category": "join",
+        "question": "List all products with their category names.",
+        "expected_sql": "SELECT products.product_name, categories.category_name FROM products JOIN categories ON products.category_id = categories.category_id",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_004",
+        "category": "join",
+        "question": "Show each order with the customer's company name.",
+        "expected_sql": "SELECT orders.order_id, customers.company_name FROM orders JOIN customers ON orders.customer_id = customers.customer_id",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_005",
+        "category": "join",
+        "question": "Which employees handled the most orders?",
+        "expected_sql": "SELECT employees.first_name, employees.last_name, COUNT(orders.order_id) FROM employees JOIN orders ON employees.employee_id = orders.employee_id GROUP BY employees.employee_id",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_006",
+        "category": "join",
+        "question": "Find the total sales for each product.",
+        "expected_sql": "SELECT products.product_name, SUM(order_details.unit_price * order_details.quantity) FROM products JOIN order_details ON products.product_id = order_details.product_id GROUP BY products.product_name",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_007",
+        "category": "join",
+        "question": "Which suppliers provide each product?",
+        "expected_sql": "SELECT products.product_name, suppliers.company_name FROM products JOIN suppliers ON products.supplier_id = suppliers.supplier_id",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_008",
+        "category": "join",
+        "question": "Find customers who bought products from the beverage category.",
+        "expected_sql": "SELECT DISTINCT customers.company_name FROM customers JOIN orders ON customers.customer_id = orders.customer_id JOIN order_details ON orders.order_id = order_details.order_id JOIN products ON order_details.product_id = products.product_id JOIN categories ON products.category_id = categories.category_id WHERE categories.category_name = 'Beverages'",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_009",
+        "category": "join",
+        "question": "Which products were ordered more than 100 times?",
+        "expected_sql": "SELECT products.product_name, COUNT(order_details.order_id) FROM products JOIN order_details ON products.product_id = order_details.product_id GROUP BY products.product_name HAVING COUNT(order_details.order_id) > 100",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "join_010",
+        "category": "join",
+        "question": "What are the top customers by total spending?",
+        "expected_sql": "SELECT customers.company_name, SUM(order_details.unit_price * order_details.quantity) AS total_spent FROM customers JOIN orders ON customers.customer_id = orders.customer_id JOIN order_details ON orders.order_id = order_details.order_id GROUP BY customers.company_name ORDER BY total_spent DESC",
+        "expected_rows": []
+    }
+]

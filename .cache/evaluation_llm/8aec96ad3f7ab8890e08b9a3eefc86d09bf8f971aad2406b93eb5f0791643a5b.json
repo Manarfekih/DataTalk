@@ -1,0 +1,7 @@
+{
+  "original_question": "Find customers whose company name starts with A.",
+  "corrected_question": "Find customers whose company name starts with A.",
+  "intent": "Filter customers by company name starting with the letter A",
+  "needs_clarification": false,
+  "clarification_question": null
+}

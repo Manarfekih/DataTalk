@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "employees"
+  ],
+  "reasoning": "The 'orders' table is needed to count the number of orders per employee via the employee_id column. The 'employees' table is required to link the employee_id to actual employee details (e.g., names) to identify which employees handled the most orders."
+}

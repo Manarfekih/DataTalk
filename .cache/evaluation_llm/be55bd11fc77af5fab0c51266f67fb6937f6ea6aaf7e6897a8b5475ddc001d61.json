@@ -1,0 +1,7 @@
+{
+  "original_question": "Which products were ordered more than 100 times?",
+  "corrected_question": "Which products have been ordered more than 100 times?",
+  "intent": "Identify products with over 100 order counts",
+  "needs_clarification": false,
+  "clarification_question": null
+}

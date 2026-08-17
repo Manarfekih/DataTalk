@@ -1,0 +1,7 @@
+{
+  "original_question": "Find the three most expensive products.",
+  "corrected_question": "Find the three most expensive products.",
+  "intent": "Identify the top three products by price",
+  "needs_clarification": false,
+  "clarification_question": null
+}

@@ -1,0 +1,7 @@
+{
+  "original_question": "What is the average number of units in stock?",
+  "corrected_question": "What is the average number of units in stock?",
+  "intent": "Calculate the average stock units",
+  "needs_clarification": false,
+  "clarification_question": null
+}

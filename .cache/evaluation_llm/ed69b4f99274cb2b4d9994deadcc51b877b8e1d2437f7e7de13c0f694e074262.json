@@ -1,0 +1,7 @@
+{
+  "original_question": "What products have never been ordered?",
+  "corrected_question": "What products have never been ordered?",
+  "intent": "Identify products with no order history",
+  "needs_clarification": false,
+  "clarification_question": null
+}

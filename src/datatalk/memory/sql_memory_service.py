@@ -18,13 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 class SQLMemoryService:
-    """
-    Vector memory for successful SQL corrections.
-
-    Stores SQL repair experiences in ChromaDB
-    and retrieves similar past fixes.
-    """
-
+    
 
 
     def __init__(

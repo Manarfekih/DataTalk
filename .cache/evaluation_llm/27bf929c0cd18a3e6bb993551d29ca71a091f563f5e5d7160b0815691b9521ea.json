@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT c.category_name, COUNT(p.product_id) AS product_count FROM products p JOIN categories c ON p.category_id = c.category_id GROUP BY c.category_id ORDER BY product_count DESC LIMIT 1;"
+}

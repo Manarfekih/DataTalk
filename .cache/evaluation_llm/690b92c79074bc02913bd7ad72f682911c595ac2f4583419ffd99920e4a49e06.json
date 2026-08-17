@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT EXTRACT(YEAR FROM order_date) AS order_year, COUNT(order_id) AS total_orders FROM orders GROUP BY EXTRACT(YEAR FROM order_date)"
+}

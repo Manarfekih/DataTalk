@@ -1,0 +1,10 @@
+{
+  "relevant_tables": [
+    "customers",
+    "orders",
+    "order_details",
+    "products",
+    "categories"
+  ],
+  "reasoning": "customers provides customer information, orders links customers to orders, order_details connects orders to products, products contains product-category relationships, and categories identifies beverage category products. All are necessary to trace purchases to customers via category."
+}

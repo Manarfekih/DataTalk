@@ -1,0 +1,11 @@
+{
+  "content": "response:hello",
+  "provider": "dummy",
+  "model": "dummy-model",
+  "prompt_tokens": null,
+  "completion_tokens": null,
+  "total_tokens": null,
+  "latency_ms": null,
+  "metadata": {},
+  "timestamp": "2026-08-06 02:17:05.242418+00:00"
+}

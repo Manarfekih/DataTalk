@@ -1,0 +1,7 @@
+{
+  "original_question": "Which category contains the most products?",
+  "corrected_question": "Which category contains the most products?",
+  "intent": "Identify the product category with the highest product count",
+  "needs_clarification": false,
+  "clarification_question": null
+}

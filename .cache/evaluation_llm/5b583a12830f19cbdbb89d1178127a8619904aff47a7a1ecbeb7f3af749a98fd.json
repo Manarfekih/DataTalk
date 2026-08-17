@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the product_id column, which is the primary key for products. Counting the rows in this table directly answers 'how many products exist'. No other tables are needed since the question does not require filtering, joining, or additional calculations."
+}

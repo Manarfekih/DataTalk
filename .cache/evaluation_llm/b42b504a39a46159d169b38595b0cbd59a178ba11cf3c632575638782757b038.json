@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the 'unit_price' column, which is directly needed to find the maximum product price. No other tables are required for this calculation or for filtering."
+}

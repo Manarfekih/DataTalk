@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "customers"
+  ],
+  "reasoning": "The 'customers' table contains all customer records. Counting the number of rows in this table directly answers the question. No other tables are needed since there are no filters, joins, or calculations required for a simple customer count."
+}

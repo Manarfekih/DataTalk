@@ -1,0 +1,90 @@
+[
+    {
+        "id": "filter_001",
+        "category": "filtering",
+        "question": "Find all customers from Germany.",
+        "expected_sql": "SELECT * FROM customers WHERE country = 'Germany'",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_002",
+        "category": "filtering",
+        "question": "Find customers located in France.",
+        "expected_sql": "SELECT * FROM customers WHERE country = 'France'",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_003",
+        "category": "filtering",
+        "question": "List products that cost more than 50.",
+        "expected_sql": "SELECT * FROM products WHERE unit_price > 50",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_004",
+        "category": "filtering",
+        "question": "Show products that are discontinued.",
+        "expected_sql": "SELECT * FROM products WHERE discontinued = 1",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_005",
+        "category": "filtering",
+        "question": "Find all employees hired after 1993.",
+        "expected_sql": "SELECT * FROM employees WHERE hire_date > '1993-01-01'",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_006",
+        "category": "filtering",
+        "question": "Show orders shipped to London.",
+        "expected_sql": "SELECT * FROM orders WHERE ship_city = 'London'",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_007",
+        "category": "filtering",
+        "question": "Find customers whose company name starts with A.",
+        "expected_sql": "SELECT * FROM customers WHERE company_name LIKE 'A%'",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_008",
+        "category": "filtering",
+        "question": "List products with stock below 20 units.",
+        "expected_sql": "SELECT * FROM products WHERE units_in_stock < 20",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_009",
+        "category": "filtering",
+        "question": "Find orders shipped to France or Germany.",
+        "expected_sql": "SELECT * FROM orders WHERE ship_country IN ('France','Germany')",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "filter_010",
+        "category": "filtering",
+        "question": "Find customers without a fax number.",
+        "expected_sql": "SELECT * FROM customers WHERE fax IS NULL",
+        "expected_rows": []
+    }
+]

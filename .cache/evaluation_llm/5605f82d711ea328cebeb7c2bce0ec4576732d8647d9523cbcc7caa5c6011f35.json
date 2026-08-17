@@ -1,0 +1,7 @@
+{
+  "original_question": "Which employee generated the highest sales?",
+  "corrected_question": "Which employee generated the highest sales?",
+  "intent": "Identify the employee with the highest sales revenue",
+  "needs_clarification": false,
+  "clarification_question": null
+}

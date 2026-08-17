@@ -1,6 +1,7 @@
 from __future__ import annotations
 
-from datatalk.models import QueryResult
+
+from datatalk.graph.state import DataTalkState
 
 from .models import (
     QueryResponse,
@@ -8,86 +9,117 @@ from .models import (
 )
 
 
-def to_retry_attempt_response(
-    retry,
-) -> RetryAttemptResponse:
-    """
-    Convert internal RetryAttempt model
-    into API response model.
-    """
-
-    return RetryAttemptResponse(
-        attempt_number=retry.attempt_number,
-        original_sql=retry.original_sql,
-        error=retry.error,
-        corrected_sql=retry.corrected_sql,
-        reasoning=retry.reasoning,
-        confidence=retry.confidence,
-        detected_error=retry.detected_error,
-        changes_made=retry.changes_made,
-    )
 
 
 
 def to_query_response(
-    result: QueryResult,
+    state: DataTalkState,
 ) -> QueryResponse:
-    """
-    Convert workflow QueryResult
-    into FastAPI QueryResponse.
-    """
+
+
+    execution = state.get(
+        "execution"
+    )
+
+
 
     return QueryResponse(
 
-        question=result.question,
+        question=
+            state.get(
+                "question",
+                ""
+            ),
 
-        tables=result.tables,
 
-        reasoning=result.reasoning,
+        tables=
+            state.get(
+                "tables",
+                []
+            ),
 
-        sql_query=result.sql_query,
 
-        explanation=result.explanation,
+        reasoning=
+            state.get(
+                "reasoning",
+                ""
+            ),
+
+
+        sql_query=
+            state.get(
+                "sql_query",
+                ""
+            ),
+
+
+        explanation=
+            state.get(
+                "explanation",
+                ""
+            ),
+
 
 
         rows=(
-            result.execution.rows
-            if result.execution
+            execution.rows
+            if execution
             else []
         ),
+
 
 
         columns=(
-            result.execution.columns
-            if result.execution
+            execution.columns
+            if execution
             else []
         ),
 
 
+
         row_count=(
-            result.execution.row_count
-            if result.execution
+            len(execution.rows)
+            if execution
             else 0
         ),
 
 
+
         execution_time_ms=(
-            result.execution.elapsed_ms
-            if result.execution
+            execution.elapsed_ms
+            if execution
             else 0.0
         ),
 
 
-        total_time_ms=result.total_elapsed_ms,
+
+        total_time_ms=
+            state.get(
+                "total_elapsed_ms",
+                0.0
+            ),
 
 
-        retry_count=result.retry_count,
+
+        retry_count=
+            state.get(
+                "retry_count",
+                0
+            ),
+
 
 
         retry_history=[
-            to_retry_attempt_response(item)
-            for item in result.retry_history
+            RetryAttemptResponse(
+                attempt_number=a.attempt_number,
+                original_sql=a.original_sql,
+                error=a.error,
+                corrected_sql=a.corrected_sql,
+                reasoning=a.reasoning,
+                confidence=a.confidence,
+                detected_error=a.detected_error,
+                changes_made=a.changes_made,
+            )
+            for a in state.get("retry_history", [])
         ],
-
-
     )

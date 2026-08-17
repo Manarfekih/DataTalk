@@ -1,0 +1,7 @@
+{
+  "original_question": "Find all customers from Germany.",
+  "corrected_question": "Find all customers from Germany.",
+  "intent": "Retrieve customer data filtered by country",
+  "needs_clarification": false,
+  "clarification_question": null
+}

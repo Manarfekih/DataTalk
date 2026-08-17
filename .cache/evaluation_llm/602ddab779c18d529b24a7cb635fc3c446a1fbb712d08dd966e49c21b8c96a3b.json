@@ -1,0 +1,7 @@
+{
+  "original_question": "Who is the customer with the highest number of orders?",
+  "corrected_question": "Which customer has the highest number of orders?",
+  "intent": "Identify the top customer by order count",
+  "needs_clarification": false,
+  "clarification_question": null
+}

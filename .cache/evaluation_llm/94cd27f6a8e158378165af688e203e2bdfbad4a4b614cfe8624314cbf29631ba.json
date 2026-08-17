@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT * FROM products WHERE discontinued = 1"
+}

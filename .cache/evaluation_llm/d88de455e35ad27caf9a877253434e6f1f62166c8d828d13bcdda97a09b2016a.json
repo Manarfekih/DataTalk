@@ -1,0 +1,8 @@
+{
+  "relevant_tables": [
+    "employees",
+    "orders",
+    "order_details"
+  ],
+  "reasoning": "The 'orders' table links employees to orders via employee_id. 'order_details' provides the revenue data (unit_price, quantity, discount) needed to calculate sales. 'employees' is required to identify the employee's name/ID. Other tables like customers or products are not needed for this employee-centric sales calculation."
+}

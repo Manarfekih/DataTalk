@@ -20,6 +20,14 @@ logger = logging.getLogger(__name__)
 T = TypeVar("T", bound=BaseModel)
 
 
+def _is_placeholder_api_key(api_key: str | None) -> bool:
+    if not api_key:
+        return True
+
+    normalized = api_key.strip().upper()
+    return normalized.startswith("YOUR_") or normalized in {"CHANGE_ME", "REPLACE_ME", "TODO", "TBD"}
+
+
 class GeminiProvider(BaseLLMProvider):
     
 
@@ -35,10 +43,10 @@ class GeminiProvider(BaseLLMProvider):
     def __init__(self):
         api_key = settings.gemini_api_key
 
-        if not api_key:
+        if _is_placeholder_api_key(api_key):
             raise ValueError(
-                "GEMINI_API_KEY is missing. "
-                "Create one from https://ai.google.dev/"
+                "GEMINI_API_KEY is missing or still set to a placeholder. "
+                "Set a real Gemini API key in .env or switch LLM_PROVIDER to qwen."
             )
 
         self.client = genai.Client(api_key=api_key)

@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the 'unit_price' column, which directly represents the price of each product. To calculate the average product price, only this table is needed."
+}

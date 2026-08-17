@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "customers"
+  ],
+  "reasoning": "The 'customers' table contains the 'fax' column which is directly relevant to identifying customers with missing fax numbers. No other tables are needed since the question focuses solely on customer fax information."
+}

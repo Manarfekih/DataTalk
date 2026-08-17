@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT * FROM customers WHERE company_name LIKE 'A%'"
+}

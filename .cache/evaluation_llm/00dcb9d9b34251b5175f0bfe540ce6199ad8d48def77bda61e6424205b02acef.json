@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "products",
+    "categories"
+  ],
+  "reasoning": "The 'products' table contains the unit_price column needed to calculate average product prices. The 'categories' table is required to group products by their category and compute the average per category. No other tables are needed as the question focuses solely on product pricing and categorization."
+}

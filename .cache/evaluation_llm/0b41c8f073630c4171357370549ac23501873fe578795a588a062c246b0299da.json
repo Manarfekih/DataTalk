@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "employees"
+  ],
+  "reasoning": "The 'employees' table contains the 'hire_date' column required to filter employees hired after January 1, 1993. No other tables are needed since the question only requires information directly from the employees table."
+}

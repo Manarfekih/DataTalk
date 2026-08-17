@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "orders"
+  ],
+  "reasoning": "The 'orders' table contains the order records. Counting the number of rows in this table directly gives the total number of orders. No other tables are needed for this simple aggregation."
+}

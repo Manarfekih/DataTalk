@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "customers",
+    "orders"
+  ],
+  "reasoning": "The 'customers' table contains customer information, and the 'orders' table contains order data. To identify customers who have placed orders, we need to link customers to their orders using the customer_id foreign key in the orders table. Other tables are not required for this basic customer-order relationship."
+}

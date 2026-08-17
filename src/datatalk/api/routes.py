@@ -12,9 +12,11 @@ from fastapi import (
 )
 
 
-from .dependencies import get_workflow
+from .dependencies import get_graph
 
-from .mapper import to_query_response
+from .mapper import (
+    to_query_response
+)
 
 
 from .models import (
@@ -24,15 +26,19 @@ from .models import (
 )
 
 
-from ..database.connection import db_manager
+from datatalk.graph.workflow import DataTalkGraph
+
+from datatalk.database.connection import db_manager
 
 
 
 logger = logging.getLogger(__name__)
 
 
-
 router = APIRouter()
+
+
+
 
 
 
@@ -42,9 +48,13 @@ router = APIRouter()
 )
 def root():
 
+
     return {
-        "message": "DataTalk API running"
+        "message":
+        "DataTalk API running with LangGraph"
     }
+
+
 
 
 
@@ -62,10 +72,14 @@ def health():
 
         status="ok",
 
-        database=db_manager.is_connected(),
+        database=
+            db_manager.is_connected(),
 
         llm=True,
+
     )
+
+
 
 
 
@@ -81,15 +95,32 @@ def query(
 
     request: QueryRequest,
 
-    workflow=Depends(get_workflow),
+    graph: DataTalkGraph =
+        Depends(get_graph),
 
 ):
 
 
     try:
 
-        result = workflow.ask(
-            request.question
+
+        result = graph.invoke(
+
+            {
+
+                "question":
+                    request.question,
+
+
+                "retry_count":
+                    0,
+
+
+                "max_retries":
+                    2,
+
+            }
+
         )
 
 
@@ -99,16 +130,18 @@ def query(
 
 
 
+
     except ValueError as exc:
 
 
         raise HTTPException(
 
-            status_code=status.HTTP_400_BAD_REQUEST,
+            status_code=
+                status.HTTP_400_BAD_REQUEST,
 
             detail=str(exc),
 
-        ) from exc
+        )
 
 
 
@@ -117,14 +150,16 @@ def query(
 
 
         logger.exception(
-            "Unhandled error in /query"
+            "Query failed"
         )
 
 
         raise HTTPException(
 
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            status_code=
+                status.HTTP_500_INTERNAL_SERVER_ERROR,
 
-            detail="Internal server error",
+            detail=
+                "Internal server error",
 
-        ) from exc
+        )

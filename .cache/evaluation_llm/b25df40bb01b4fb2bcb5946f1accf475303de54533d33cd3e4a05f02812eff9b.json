@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the 'unit_price' column, which directly stores the price of each product. To find the minimum product price, we only need to query this column from the 'products' table."
+}

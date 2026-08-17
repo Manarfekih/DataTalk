@@ -23,6 +23,10 @@ class Settings:
 
         # LLM Provider
         self.llm_provider: str = os.getenv("LLM_PROVIDER", "gemini")
+        self.ollama_base_url: str = os.getenv(
+            "OLLAMA_BASE_URL",
+            "http://localhost:11434",
+        )
 
         # Application
         self.app_env: str = os.getenv("APP_ENV", "development")

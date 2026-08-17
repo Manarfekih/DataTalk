@@ -1,0 +1,90 @@
+[
+    {
+        "id": "complex_001",
+        "category": "complex",
+        "question": "Who is the customer with the highest number of orders?",
+        "expected_sql": "SELECT customer_id, COUNT(order_id) AS total_orders FROM orders GROUP BY customer_id ORDER BY total_orders DESC LIMIT 1",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_002",
+        "category": "complex",
+        "question": "What is the best selling product?",
+        "expected_sql": "SELECT product_id, SUM(quantity) AS total_quantity FROM order_details GROUP BY product_id ORDER BY total_quantity DESC LIMIT 1",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_003",
+        "category": "complex",
+        "question": "Find categories with average product price above 30.",
+        "expected_sql": "SELECT category_id, AVG(unit_price) FROM products GROUP BY category_id HAVING AVG(unit_price) > 30",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_004",
+        "category": "complex",
+        "question": "Which employee generated the highest sales?",
+        "expected_sql": "SELECT employees.employee_id, SUM(order_details.unit_price * order_details.quantity) AS sales FROM employees JOIN orders ON employees.employee_id = orders.employee_id JOIN order_details ON orders.order_id = order_details.order_id GROUP BY employees.employee_id ORDER BY sales DESC LIMIT 1",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_005",
+        "category": "complex",
+        "question": "Find customers who never placed an order.",
+        "expected_sql": "SELECT customers.company_name FROM customers LEFT JOIN orders ON customers.customer_id = orders.customer_id WHERE orders.order_id IS NULL",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_006",
+        "category": "complex",
+        "question": "What products have never been ordered?",
+        "expected_sql": "SELECT products.product_name FROM products LEFT JOIN order_details ON products.product_id = order_details.product_id WHERE order_details.order_id IS NULL",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_007",
+        "category": "complex",
+        "question": "Show monthly revenue.",
+        "expected_sql": "SELECT MONTH(order_date), SUM(unit_price * quantity) FROM orders JOIN order_details ON orders.order_id = order_details.order_id GROUP BY MONTH(order_date)",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_008",
+        "category": "complex",
+        "question": "Find the three most expensive products.",
+        "expected_sql": "SELECT product_name, unit_price FROM products ORDER BY unit_price DESC LIMIT 3",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_009",
+        "category": "complex",
+        "question": "Which countries generate the highest number of orders?",
+        "expected_sql": "SELECT ship_country, COUNT(order_id) FROM orders GROUP BY ship_country ORDER BY COUNT(order_id) DESC",
+        "expected_rows": []
+    },
+
+
+    {
+        "id": "complex_010",
+        "category": "complex",
+        "question": "What is the average order value?",
+        "expected_sql": "SELECT AVG(total) FROM (SELECT order_id, SUM(unit_price * quantity) AS total FROM order_details GROUP BY order_id)",
+        "expected_rows": []
+    }
+]

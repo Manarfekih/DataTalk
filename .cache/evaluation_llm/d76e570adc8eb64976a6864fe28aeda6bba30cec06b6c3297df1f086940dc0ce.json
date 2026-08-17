@@ -1,0 +1,7 @@
+{
+  "original_question": "Find customers who bought products from the beverage category.",
+  "corrected_question": "Find customers who purchased products in the beverage category.",
+  "intent": "Identify customers based on their purchase history in the beverage category",
+  "needs_clarification": false,
+  "clarification_question": null
+}

@@ -1,0 +1,7 @@
+{
+  "original_question": "Find categories with average product price above 30.",
+  "corrected_question": "Find categories where the average product price is above 30.",
+  "intent": "Identify categories with high average product prices",
+  "needs_clarification": false,
+  "clarification_question": null
+}

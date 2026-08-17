@@ -1,0 +1,7 @@
+{
+  "original_question": "Which customers have placed orders?",
+  "corrected_question": "Identify customers who have placed orders",
+  "intent": "List customers with order history",
+  "needs_clarification": false,
+  "clarification_question": null
+}

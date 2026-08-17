@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "order_details"
+  ],
+  "reasoning": "The order_details table contains the necessary columns (unit_price, quantity, discount) to calculate the revenue for each order detail. Summing the (unit_price * quantity * (1 - discount)) across all order details provides the total sales amount. No other tables are required for this calculation."
+}

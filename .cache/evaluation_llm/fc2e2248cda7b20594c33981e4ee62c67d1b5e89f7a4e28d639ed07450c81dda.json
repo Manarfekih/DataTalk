@@ -1,0 +1,7 @@
+{
+  "original_question": "",
+  "corrected_question": "What is the total number of products per category?",
+  "intent": "Calculate the count of products for each category.",
+  "needs_clarification": false,
+  "clarification_question": null
+}

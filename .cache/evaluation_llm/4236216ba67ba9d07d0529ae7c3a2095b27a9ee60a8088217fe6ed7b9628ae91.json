@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "order_details"
+  ],
+  "reasoning": "The 'orders' table is needed to identify individual orders and group calculations by order. The 'order_details' table contains the unit_price, quantity, and discount columns required to calculate the total revenue per order. These tables are essential for computing the average order value through aggregation."
+}

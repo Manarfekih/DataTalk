@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "products"
+  ],
+  "reasoning": "The 'products' table contains the 'discontinued' column which is necessary to filter and identify discontinued products. No other tables are required as the question does not involve additional filtering, calculations, or joins."
+}

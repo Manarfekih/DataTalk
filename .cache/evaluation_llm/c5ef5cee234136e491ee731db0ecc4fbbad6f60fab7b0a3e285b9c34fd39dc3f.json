@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "customers"
+  ],
+  "reasoning": "The 'orders' table is needed to retrieve order information, and the 'customers' table is required to get the customer's company name via the customer_id foreign key link between the two tables."
+}

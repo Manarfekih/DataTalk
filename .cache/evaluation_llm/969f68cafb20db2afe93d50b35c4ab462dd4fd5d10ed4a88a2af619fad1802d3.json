@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "products",
+    "order_details"
+  ],
+  "reasoning": "The 'products' table is needed to identify all products, while 'order_details' is required to check which products have been ordered. To find products that have never been ordered, we need to compare all products against the product_ids present in order_details."
+}

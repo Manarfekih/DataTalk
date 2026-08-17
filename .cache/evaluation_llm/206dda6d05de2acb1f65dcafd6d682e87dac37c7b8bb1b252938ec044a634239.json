@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "orders",
+    "order_details"
+  ],
+  "reasoning": "The 'orders' table provides the order_date needed to calculate monthly revenue, while 'order_details' contains the unit_price, quantity, and discount fields required to compute revenue per order. These tables must be joined and aggregated by month to answer the question."
+}

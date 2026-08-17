@@ -1,0 +1,7 @@
+{
+  "original_question": "Show each order with the customer's company name.",
+  "corrected_question": "Show each order along with the customer's company name.",
+  "intent": "Join order data with customer company names",
+  "needs_clarification": false,
+  "clarification_question": null
+}
