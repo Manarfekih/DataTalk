@@ -2,6 +2,7 @@ from datatalk.evaluation.metrics import (
     SQLNormalizer,
     EvaluationMetrics,
 )
+from datatalk.evaluation.evaluator import DataTalkEvaluator
 
 from datatalk.evaluation.models import EvaluationResult
 
@@ -49,3 +50,21 @@ def test_execution_accuracy() -> None:
     score = EvaluationMetrics.execution_accuracy(results)
 
     assert score == 1.0
+
+
+def test_compare_rows_allows_alias_only_differences() -> None:
+    evaluator = DataTalkEvaluator()
+
+    generated = [{"average_product_price": 28.83389609200614}]
+    expected = [{"avg": 28.83389609200614}]
+
+    assert evaluator.compare_rows(generated, expected) is True
+
+
+def test_compare_rows_rejects_extra_columns() -> None:
+    evaluator = DataTalkEvaluator()
+
+    generated = [{"customer_id": "ALFKI", "company_name": "Alfreds", "count": 6}]
+    expected = [{"customer_id": "ALFKI", "count": 6}]
+
+    assert evaluator.compare_rows(generated, expected) is False

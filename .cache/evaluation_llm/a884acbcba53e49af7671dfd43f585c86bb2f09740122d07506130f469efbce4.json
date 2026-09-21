@@ -1,0 +1,7 @@
+{
+  "original_question": "",
+  "corrected_question": "How many customers are there?",
+  "intent": "Count the total number of customers.",
+  "needs_clarification": false,
+  "clarification_question": null
+}

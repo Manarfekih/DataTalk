@@ -6,7 +6,6 @@ load_dotenv()
 
 
 class Settings:
-    """Application settings."""
 
     def __init__(self) -> None:
 

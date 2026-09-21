@@ -37,9 +37,7 @@ app.include_router(obs_router)
 
 @app.on_event("startup")
 def startup_event() -> None:
-    """
-    Initialize DataTalk components when API starts.
-    """
+   
 
     logger.info(
         "Starting DataTalk API..."

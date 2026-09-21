@@ -6,6 +6,7 @@ import time
 from datatalk.evaluation.evaluator import DataTalkEvaluator
 from datatalk.evaluation.models import EvaluationCase, EvaluationResult
 from datatalk.graph.workflow import DataTalkGraph
+from datatalk.services.sql_executor import SQLExecutor
 
 
 logger = logging.getLogger(__name__)
@@ -13,9 +14,10 @@ logger = logging.getLogger(__name__)
 
 class EvaluationRunner:
 
-    def __init__(self, graph: DataTalkGraph) -> None:
+    def __init__(self, graph: DataTalkGraph, sql_executor: SQLExecutor | None = None) -> None:
         self.graph = graph
         self.evaluator = DataTalkEvaluator()
+        self.sql_executor = sql_executor
 
     def run_case(self, case: EvaluationCase) -> EvaluationResult:
         logger.info("Running evaluation case %s", case.id)
@@ -41,10 +43,12 @@ class EvaluationRunner:
             retry_success = retry_used and execution_success
             sql_correct = self.evaluator.compare_sql(generated_sql, case.expected_sql)
 
-            if case.expected_rows:
-                execution_correct = self.evaluator.compare_rows(rows, case.expected_rows)
-            else:
-                execution_correct = execution_success
+            expected_rows, has_expected_rows = self._resolve_expected_rows(case)
+            execution_correct = (
+                execution_success
+                and has_expected_rows
+                and self.evaluator.compare_rows(rows, expected_rows)
+            )
 
             return EvaluationResult(
                 case_id=case.id,
@@ -54,7 +58,7 @@ class EvaluationRunner:
                 expected_sql=case.expected_sql,
                 sql_correct=sql_correct,
                 generated_rows=rows,
-                expected_rows=case.expected_rows,
+                expected_rows=expected_rows,
                 execution_success=execution_success,
                 execution_correct=execution_correct,
                 retry_used=retry_used,
@@ -79,3 +83,25 @@ class EvaluationRunner:
 
     def run(self, cases: list[EvaluationCase]) -> list[EvaluationResult]:
         return [self.run_case(case) for case in cases]
+
+    def _resolve_expected_rows(self, case: EvaluationCase) -> tuple[list[dict], bool]:
+        if case.expected_rows:
+            return case.expected_rows, True
+
+        if self.sql_executor is None:
+            logger.warning(
+                "No SQL executor configured; cannot derive expected rows for %s.",
+                case.id,
+            )
+            return [], False
+
+        expected_execution = self.sql_executor.execute(case.expected_sql)
+        if not expected_execution.success:
+            logger.warning(
+                "Expected SQL failed for %s: %s",
+                case.id,
+                expected_execution.error,
+            )
+            return [], False
+
+        return expected_execution.rows, True

@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "orders"
+  ],
+  "reasoning": "The 'orders' table contains the 'order_id' to count the total orders and the 'order_date' to extract the year for grouping."
+}

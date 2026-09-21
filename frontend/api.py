@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-API_URL = os.getenv("DATA_TALK_API_URL", "http://127.0.0.1:8000")
+API_URL = os.getenv("DATA_TALK_API_URL", "http://127.0.0.1:8001")
 
 
 class DataTalkAPI:

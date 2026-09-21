@@ -6,9 +6,7 @@ from pydantic import BaseModel, Field
 
 
 class EvaluationCase(BaseModel):
-    """
-    Single benchmark question.
-    """
+   
 
 
     id: str = Field(
@@ -42,9 +40,7 @@ class EvaluationCase(BaseModel):
 
 
 class EvaluationResult(BaseModel):
-    """
-    Result of executing one benchmark case.
-    """
+    
 
 
     case_id: str

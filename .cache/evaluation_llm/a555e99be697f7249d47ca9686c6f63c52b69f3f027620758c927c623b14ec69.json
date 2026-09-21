@@ -1,0 +1,6 @@
+{
+  "relevant_tables": [
+    "customers"
+  ],
+  "reasoning": "The 'customers' table contains a unique entry for each customer. To count the total number of customers, we only need to query this table."
+}

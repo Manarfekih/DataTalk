@@ -89,7 +89,7 @@ def main() -> None:
 
     logger.info("Loaded %d benchmark cases.", len(cases))
 
-    runner = EvaluationRunner(graph)
+    runner = EvaluationRunner(graph, sql_executor=container.sql_executor)
     results = runner.run(cases)
     logger.info("Evaluation completed.")
 

@@ -1,12 +1,14 @@
-﻿from .dependencies import get_graph, get_workflow
+from .app import app
+from .dependencies import get_graph, get_workflow
 from .models import (
+    HealthResponse,
     QueryRequest,
     QueryResponse,
-    HealthResponse,
     RetryAttemptResponse,
 )
 
 __all__ = [
+    "app",
     "get_graph",
     "get_workflow",
     "QueryRequest",

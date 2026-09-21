@@ -1,0 +1,7 @@
+{
+  "relevant_tables": [
+    "order_details",
+    "products"
+  ],
+  "reasoning": "order_details contains the unit_price, quantity, and discount needed to calculate sales revenue. Products is required to associate product IDs with product names for grouping and identifying each product."
+}

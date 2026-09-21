@@ -8,7 +8,6 @@ from datatalk.evaluation.models import EvaluationCase
 
 
 class BenchmarkDataset:
-    """In-memory benchmark dataset loaded from a JSON file."""
 
     def __init__(self, cases: Iterable[EvaluationCase]) -> None:
         self.cases = list(cases)
@@ -28,7 +27,6 @@ class BenchmarkDataset:
 
 
 class BenchmarkLoader:
-    """Load all benchmark JSON files from a directory."""
 
     def __init__(self, path: str | Path) -> None:
         self.path = Path(path)
@@ -38,7 +36,6 @@ class BenchmarkLoader:
         return load_cases_from_json(self.path)
 
     def load_all(self) -> list[EvaluationCase]:
-        """Load every JSON benchmark file in a directory."""
         if not self.path.exists():
             raise FileNotFoundError(f"Benchmark directory not found: {self.path}")
 
@@ -57,7 +54,6 @@ class BenchmarkLoader:
 
 
 def load_cases_from_json(path: str | Path) -> list[EvaluationCase]:
-    """Load a list of evaluation cases from a JSON file."""
     file_path = Path(path)
 
     if not file_path.exists():

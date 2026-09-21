@@ -1,0 +1,7 @@
+{
+  "original_question": "",
+  "corrected_question": "Show total orders per year.",
+  "intent": "Calculate the total number of orders for each year.",
+  "needs_clarification": false,
+  "clarification_question": null
+}

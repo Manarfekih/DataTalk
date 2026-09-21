@@ -1,11 +1,11 @@
 {
     "summary": {
-        "generated_at": "2026-08-13T03:03:00.422796+00:00",
-        "total_questions": 1,
-        "text_to_sql_accuracy": 0.0,
-        "execution_accuracy": 1.0,
+        "generated_at": "2026-09-21T21:26:42.110720+00:00",
+        "total_questions": 45,
+        "text_to_sql_accuracy": 0.08888888888888889,
+        "execution_accuracy": 0.5333333333333333,
         "retry_success_rate": 0.0,
-        "first_pass_accuracy": 1.0,
+        "first_pass_accuracy": 0.5333333333333333,
         "average_retry_count": 0.0
     },
     "results": [
@@ -41,436 +41,3305 @@
                     "customer_id": "BSBEV",
                     "company_name": "B's Beverages",
                     "total_orders": 10
-                },
+                }
+            ],
+            "expected_rows": [
                 {
-                    "customer_id": "BERGS",
-                    "company_name": "Berglunds snabbköp",
-                    "total_orders": 18
-                },
-                {
-                    "customer_id": "BLAUS",
-                    "company_name": "Blauer See Delikatessen",
-                    "total_orders": 7
-                },
-                {
-                    "customer_id": "BLONP",
-                    "company_name": "Blondesddsl père et fils",
-                    "total_orders": 11
-                },
-                {
-                    "customer_id": "BONAP",
-                    "company_name": "Bon app'",
-                    "total_orders": 17
-                },
-                {
-                    "customer_id": "BOTTM",
-                    "company_name": "Bottom-Dollar Markets",
-                    "total_orders": 14
-                },
-                {
-                    "customer_id": "BOLID",
-                    "company_name": "Bólido Comidas preparadas",
-                    "total_orders": 3
-                },
-                {
-                    "customer_id": "CACTU",
-                    "company_name": "Cactus Comidas para llevar",
-                    "total_orders": 6
-                },
-                {
-                    "customer_id": "CENTC",
-                    "company_name": "Centro comercial Moctezuma",
-                    "total_orders": 1
-                },
-                {
-                    "customer_id": "CHOPS",
-                    "company_name": "Chop-suey Chinese",
-                    "total_orders": 8
-                },
-                {
-                    "customer_id": "COMMI",
-                    "company_name": "Comércio Mineiro",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "CONSH",
-                    "company_name": "Consolidated Holdings",
-                    "total_orders": 3
-                },
-                {
-                    "customer_id": "WANDK",
-                    "company_name": "Die Wandernde Kuh",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "DRACD",
-                    "company_name": "Drachenblut Delikatessen",
-                    "total_orders": 6
-                },
-                {
-                    "customer_id": "DUMON",
-                    "company_name": "Du monde entier",
-                    "total_orders": 4
-                },
-                {
-                    "customer_id": "EASTC",
-                    "company_name": "Eastern Connection",
-                    "total_orders": 8
-                },
-                {
-                    "customer_id": "ERNSH",
-                    "company_name": "Ernst Handel",
-                    "total_orders": 30
-                },
-                {
-                    "customer_id": "FAMIA",
-                    "company_name": "Familia Arquibaldo",
-                    "total_orders": 7
-                },
-                {
-                    "customer_id": "FOLIG",
-                    "company_name": "Folies gourmandes",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "FOLKO",
-                    "company_name": "Folk och fä HB",
-                    "total_orders": 19
-                },
-                {
-                    "customer_id": "FRANR",
-                    "company_name": "France restauration",
-                    "total_orders": 3
-                },
-                {
-                    "customer_id": "FRANS",
-                    "company_name": "Franchi S.p.A.",
-                    "total_orders": 6
-                },
-                {
-                    "customer_id": "FRANK",
-                    "company_name": "Frankenversand",
-                    "total_orders": 15
-                },
-                {
-                    "customer_id": "FURIB",
-                    "company_name": "Furia Bacalhau e Frutos do Mar",
-                    "total_orders": 8
-                },
-                {
-                    "customer_id": "GROSR",
-                    "company_name": "GROSELLA-Restaurante",
-                    "total_orders": 2
-                },
-                {
-                    "customer_id": "GALED",
-                    "company_name": "Galería del gastrónomo",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "GODOS",
-                    "company_name": "Godos Cocina Típica",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "GOURL",
-                    "company_name": "Gourmet Lanchonetes",
-                    "total_orders": 9
-                },
-                {
-                    "customer_id": "GREAL",
-                    "company_name": "Great Lakes Food Market",
-                    "total_orders": 11
-                },
-                {
-                    "customer_id": "HILAA",
-                    "company_name": "HILARION-Abastos",
-                    "total_orders": 18
-                },
-                {
-                    "customer_id": "HANAR",
-                    "company_name": "Hanari Carnes",
-                    "total_orders": 14
-                },
-                {
-                    "customer_id": "HUNGC",
-                    "company_name": "Hungry Coyote Import Store",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "HUNGO",
-                    "company_name": "Hungry Owl All-Night Grocers",
-                    "total_orders": 19
-                },
-                {
-                    "customer_id": "ISLAT",
-                    "company_name": "Island Trading",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "KOENE",
-                    "company_name": "Königlich Essen",
-                    "total_orders": 14
-                },
-                {
-                    "customer_id": "LILAS",
-                    "company_name": "LILA-Supermercado",
-                    "total_orders": 14
-                },
-                {
-                    "customer_id": "LINOD",
-                    "company_name": "LINO-Delicateses",
-                    "total_orders": 12
-                },
-                {
-                    "customer_id": "LACOR",
-                    "company_name": "La corne d'abondance",
-                    "total_orders": 4
-                },
-                {
-                    "customer_id": "LAMAI",
-                    "company_name": "La maison d'Asie",
-                    "total_orders": 14
-                },
-                {
-                    "customer_id": "LAUGB",
-                    "company_name": "Laughing Bacchus Wine Cellars",
-                    "total_orders": 3
-                },
-                {
-                    "customer_id": "LAZYK",
-                    "company_name": "Lazy K Kountry Store",
-                    "total_orders": 2
-                },
-                {
-                    "customer_id": "LEHMS",
-                    "company_name": "Lehmanns Marktstand",
-                    "total_orders": 15
-                },
-                {
-                    "customer_id": "LETSS",
-                    "company_name": "Let's Stop N Shop",
-                    "total_orders": 4
+                    "customer_id": "TOMSP",
+                    "count": 6
                 },
                 {
                     "customer_id": "LONEP",
-                    "company_name": "Lonesome Pine Restaurant",
-                    "total_orders": 8
-                },
-                {
-                    "customer_id": "MAGAA",
-                    "company_name": "Magazzini Alimentari Riuniti",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "MAISD",
-                    "company_name": "Maison Dewey",
-                    "total_orders": 7
-                },
-                {
-                    "customer_id": "MORGK",
-                    "company_name": "Morgenstern Gesundkost",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "MEREP",
-                    "company_name": "Mère Paillarde",
-                    "total_orders": 13
-                },
-                {
-                    "customer_id": "NORTS",
-                    "company_name": "North/South",
-                    "total_orders": 3
-                },
-                {
-                    "customer_id": "OCEAN",
-                    "company_name": "Océano Atlántico Ltda.",
-                    "total_orders": 5
+                    "count": 8
                 },
                 {
                     "customer_id": "OLDWO",
-                    "company_name": "Old World Delicatessen",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "OTTIK",
-                    "company_name": "Ottilies Käseladen",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "PERIC",
-                    "company_name": "Pericles Comidas clásicas",
-                    "total_orders": 6
-                },
-                {
-                    "customer_id": "PICCO",
-                    "company_name": "Piccolo und mehr",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "PRINI",
-                    "company_name": "Princesa Isabel Vinhos",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "QUICK",
-                    "company_name": "QUICK-Stop",
-                    "total_orders": 28
-                },
-                {
-                    "customer_id": "QUEDE",
-                    "company_name": "Que Delícia",
-                    "total_orders": 9
-                },
-                {
-                    "customer_id": "QUEEN",
-                    "company_name": "Queen Cozinha",
-                    "total_orders": 13
-                },
-                {
-                    "customer_id": "RANCH",
-                    "company_name": "Rancho grande",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "RATTC",
-                    "company_name": "Rattlesnake Canyon Grocery",
-                    "total_orders": 18
-                },
-                {
-                    "customer_id": "REGGC",
-                    "company_name": "Reggiani Caseifici",
-                    "total_orders": 12
-                },
-                {
-                    "customer_id": "RICAR",
-                    "company_name": "Ricardo Adocicados",
-                    "total_orders": 11
-                },
-                {
-                    "customer_id": "RICSU",
-                    "company_name": "Richter Supermarkt",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "ROMEY",
-                    "company_name": "Romero y tomillo",
-                    "total_orders": 5
-                },
-                {
-                    "customer_id": "SANTG",
-                    "company_name": "Santé Gourmet",
-                    "total_orders": 6
-                },
-                {
-                    "customer_id": "SAVEA",
-                    "company_name": "Save-a-lot Markets",
-                    "total_orders": 31
-                },
-                {
-                    "customer_id": "SEVES",
-                    "company_name": "Seven Seas Imports",
-                    "total_orders": 9
-                },
-                {
-                    "customer_id": "SIMOB",
-                    "company_name": "Simons bistro",
-                    "total_orders": 7
-                },
-                {
-                    "customer_id": "SPLIR",
-                    "company_name": "Split Rail Beer & Ale",
-                    "total_orders": 9
-                },
-                {
-                    "customer_id": "SPECD",
-                    "company_name": "Spécialités du monde",
-                    "total_orders": 4
-                },
-                {
-                    "customer_id": "SUPRD",
-                    "company_name": "Suprêmes délices",
-                    "total_orders": 12
-                },
-                {
-                    "customer_id": "THEBI",
-                    "company_name": "The Big Cheese",
-                    "total_orders": 4
-                },
-                {
-                    "customer_id": "THECR",
-                    "company_name": "The Cracker Box",
-                    "total_orders": 3
-                },
-                {
-                    "customer_id": "TOMSP",
-                    "company_name": "Toms Spezialitäten",
-                    "total_orders": 6
-                },
-                {
-                    "customer_id": "TORTU",
-                    "company_name": "Tortuga Restaurante",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "TRADH",
-                    "company_name": "Tradição Hipermercados",
-                    "total_orders": 6
-                },
-                {
-                    "customer_id": "TRAIH",
-                    "company_name": "Trail's Head Gourmet Provisioners",
-                    "total_orders": 3
-                },
-                {
-                    "customer_id": "VAFFE",
-                    "company_name": "Vaffeljernet",
-                    "total_orders": 11
-                },
-                {
-                    "customer_id": "VICTE",
-                    "company_name": "Victuailles en stock",
-                    "total_orders": 10
-                },
-                {
-                    "customer_id": "VINET",
-                    "company_name": "Vins et alcools Chevalier",
-                    "total_orders": 5
+                    "count": 10
                 },
                 {
                     "customer_id": "WARTH",
-                    "company_name": "Wartian Herkku",
-                    "total_orders": 15
+                    "count": 15
                 },
                 {
-                    "customer_id": "WELLI",
-                    "company_name": "Wellington Importadora",
-                    "total_orders": 9
-                },
-                {
-                    "customer_id": "WHITC",
-                    "company_name": "White Clover Markets",
-                    "total_orders": 14
-                },
-                {
-                    "customer_id": "WILMK",
-                    "company_name": "Wilman Kala",
-                    "total_orders": 7
-                },
-                {
-                    "customer_id": "WOLZA",
-                    "company_name": "Wolski  Zajazd",
-                    "total_orders": 7
+                    "customer_id": "MAGAA",
+                    "count": 10
                 }
             ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 200.2006999682635,
+            "error": null,
+            "generated_row_count": 89,
+            "expected_row_count": 89,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "agg_002",
+            "category": "aggregation",
+            "question": "What is the average product price?",
+            "generated_sql": "SELECT AVG(unit_price) AS average_product_price FROM products",
+            "expected_sql": "SELECT AVG(unit_price) FROM products",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "average_product_price": 28.83389609200614
+                }
+            ],
+            "expected_rows": [
+                {
+                    "avg": 28.83389609200614
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 47.70289995940402,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "agg_003",
+            "category": "aggregation",
+            "question": "What is the total number of products per category?",
+            "generated_sql": "SELECT c.category_name, COUNT(p.product_id) AS total_products FROM categories AS c JOIN products AS p ON c.category_id = p.category_id GROUP BY c.category_name ORDER BY c.category_name",
+            "expected_sql": "SELECT category_id, COUNT(product_id) FROM products GROUP BY category_id",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "category_name": "Beverages",
+                    "total_products": 12
+                },
+                {
+                    "category_name": "Condiments",
+                    "total_products": 12
+                },
+                {
+                    "category_name": "Confections",
+                    "total_products": 13
+                },
+                {
+                    "category_name": "Dairy Products",
+                    "total_products": 10
+                },
+                {
+                    "category_name": "Grains/Cereals",
+                    "total_products": 7
+                }
+            ],
+            "expected_rows": [
+                {
+                    "category_id": 8,
+                    "count": 12
+                },
+                {
+                    "category_id": 7,
+                    "count": 5
+                },
+                {
+                    "category_id": 1,
+                    "count": 12
+                },
+                {
+                    "category_id": 5,
+                    "count": 7
+                },
+                {
+                    "category_id": 4,
+                    "count": 10
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 64.87190001644194,
+            "error": null,
+            "generated_row_count": 8,
+            "expected_row_count": 8,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "agg_004",
+            "category": "aggregation",
+            "question": "Calculate the total sales amount.",
+            "generated_sql": "SELECT SUM(unit_price * quantity * (1 - discount)) AS total_sales_amount FROM order_details",
+            "expected_sql": "SELECT SUM(unit_price * quantity) FROM order_details",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "total_sales_amount": 1265793.038653364
+                }
+            ],
+            "expected_rows": [
+                {
+                    "sum": 1354458.590441227
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 43.38600003393367,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "agg_005",
+            "category": "aggregation",
+            "question": "Find the maximum product price.",
+            "generated_sql": "SELECT MAX(unit_price) AS maximum_product_price FROM products",
+            "expected_sql": "SELECT MAX(unit_price) FROM products",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "maximum_product_price": 263.5
+                }
+            ],
+            "expected_rows": [
+                {
+                    "max": 263.5
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 53.83879999862984,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "agg_006",
+            "category": "aggregation",
+            "question": "Find the cheapest product price.",
+            "generated_sql": "SELECT MIN(unit_price) AS minimum_price FROM products",
+            "expected_sql": "SELECT MIN(unit_price) FROM products",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "minimum_price": 2.5
+                }
+            ],
+            "expected_rows": [
+                {
+                    "min": 2.5
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 44.55789999337867,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "agg_007",
+            "category": "aggregation",
+            "question": "How many employees work in each city?",
+            "generated_sql": "SELECT city, COUNT(employee_id) AS total_employees FROM employees GROUP BY city",
+            "expected_sql": "SELECT city, COUNT(employee_id) FROM employees GROUP BY city",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "city": "Redmond",
+                    "total_employees": 1
+                },
+                {
+                    "city": "London",
+                    "total_employees": 4
+                },
+                {
+                    "city": "Tacoma",
+                    "total_employees": 1
+                },
+                {
+                    "city": "Kirkland",
+                    "total_employees": 1
+                },
+                {
+                    "city": "Seattle",
+                    "total_employees": 2
+                }
+            ],
+            "expected_rows": [
+                {
+                    "city": "Redmond",
+                    "count": 1
+                },
+                {
+                    "city": "London",
+                    "count": 4
+                },
+                {
+                    "city": "Tacoma",
+                    "count": 1
+                },
+                {
+                    "city": "Kirkland",
+                    "count": 1
+                },
+                {
+                    "city": "Seattle",
+                    "count": 2
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 51.55249999370426,
+            "error": null,
+            "generated_row_count": 5,
+            "expected_row_count": 5,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "agg_008",
+            "category": "aggregation",
+            "question": "What is the average number of units in stock?",
+            "generated_sql": "SELECT AVG(units_in_stock) AS average_units_in_stock FROM products",
+            "expected_sql": "SELECT AVG(units_in_stock) FROM products",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "average_units_in_stock": 40.506493506493506
+                }
+            ],
+            "expected_rows": [
+                {
+                    "avg": 40.506493506493506
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 44.596899999305606,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "agg_009",
+            "category": "aggregation",
+            "question": "Show total orders per year.",
+            "generated_sql": "SELECT EXTRACT(YEAR FROM order_date) AS order_year, COUNT(order_id) AS total_orders FROM orders GROUP BY order_year ORDER BY order_year",
+            "expected_sql": "SELECT YEAR(order_date), COUNT(order_id) FROM orders GROUP BY YEAR(order_date)",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "order_year": 1996.0,
+                    "total_orders": 152
+                },
+                {
+                    "order_year": 1997.0,
+                    "total_orders": 408
+                },
+                {
+                    "order_year": 1998.0,
+                    "total_orders": 270
+                }
+            ],
+            "expected_rows": [],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 48.20089996792376,
+            "error": null,
+            "generated_row_count": 3,
+            "expected_row_count": 0,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "agg_010",
+            "category": "aggregation",
+            "question": "Which category contains the most products?",
+            "generated_sql": "SELECT c.category_name, COUNT(p.product_id) AS product_count FROM categories AS c JOIN products AS p ON c.category_id = p.category_id GROUP BY c.category_name ORDER BY product_count DESC LIMIT 1",
+            "expected_sql": "SELECT category_id, COUNT(product_id) FROM products GROUP BY category_id ORDER BY COUNT(product_id) DESC LIMIT 1",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "category_name": "Confections",
+                    "product_count": 13
+                }
+            ],
+            "expected_rows": [
+                {
+                    "category_id": 3,
+                    "count": 13
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 47.247599984984845,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "basic_001",
+            "category": "basic",
+            "question": "How many customers are there?",
+            "generated_sql": "SELECT COUNT(customer_id) AS total_customers FROM customers",
+            "expected_sql": "SELECT COUNT(customer_id) FROM customers",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "total_customers": 91
+                }
+            ],
+            "expected_rows": [
+                {
+                    "count": 91
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 50.15560000902042,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "basic_002",
+            "category": "basic",
+            "question": "How many products exist?",
+            "generated_sql": "SELECT COUNT(*) AS total_products FROM products",
+            "expected_sql": "SELECT COUNT(product_id) FROM products",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "total_products": 77
+                }
+            ],
+            "expected_rows": [
+                {
+                    "count": 77
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 87058.12820000574,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "basic_003",
+            "category": "basic",
+            "question": "List all customer company names.",
+            "generated_sql": "SELECT company_name AS company_name FROM customers",
+            "expected_sql": "SELECT company_name FROM customers",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "company_name": "Alfreds Futterkiste"
+                },
+                {
+                    "company_name": "Ana Trujillo Emparedados y helados"
+                },
+                {
+                    "company_name": "Antonio Moreno Taquería"
+                },
+                {
+                    "company_name": "Around the Horn"
+                },
+                {
+                    "company_name": "Berglunds snabbköp"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "company_name": "Alfreds Futterkiste"
+                },
+                {
+                    "company_name": "Ana Trujillo Emparedados y helados"
+                },
+                {
+                    "company_name": "Antonio Moreno Taquería"
+                },
+                {
+                    "company_name": "Around the Horn"
+                },
+                {
+                    "company_name": "Berglunds snabbköp"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 48.89470001216978,
+            "error": null,
+            "generated_row_count": 91,
+            "expected_row_count": 91,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "basic_004",
+            "category": "basic",
+            "question": "Show all categories.",
+            "generated_sql": "SELECT * FROM categories",
+            "expected_sql": "SELECT category_name FROM categories",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "category_id": 1,
+                    "category_name": "Beverages",
+                    "description": "Soft drinks, coffees, teas, beers, and ales",
+                    "picture": ""
+                },
+                {
+                    "category_id": 2,
+                    "category_name": "Condiments",
+                    "description": "Sweet and savory sauces, relishes, spreads, and seasonings",
+                    "picture": ""
+                },
+                {
+                    "category_id": 3,
+                    "category_name": "Confections",
+                    "description": "Desserts, candies, and sweet breads",
+                    "picture": ""
+                },
+                {
+                    "category_id": 4,
+                    "category_name": "Dairy Products",
+                    "description": "Cheeses",
+                    "picture": ""
+                },
+                {
+                    "category_id": 5,
+                    "category_name": "Grains/Cereals",
+                    "description": "Breads, crackers, pasta, and cereal",
+                    "picture": ""
+                }
+            ],
+            "expected_rows": [
+                {
+                    "category_name": "Beverages"
+                },
+                {
+                    "category_name": "Condiments"
+                },
+                {
+                    "category_name": "Confections"
+                },
+                {
+                    "category_name": "Dairy Products"
+                },
+                {
+                    "category_name": "Grains/Cereals"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 59.581900015473366,
+            "error": null,
+            "generated_row_count": 8,
+            "expected_row_count": 8,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "basic_005",
+            "category": "basic",
+            "question": "How many orders exist?",
+            "generated_sql": "SELECT COUNT(*) AS total_orders FROM orders",
+            "expected_sql": "SELECT COUNT(order_id) FROM orders",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "total_orders": 830
+                }
+            ],
+            "expected_rows": [
+                {
+                    "count": 830
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 52.116099977865815,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_001",
+            "category": "complex",
+            "question": "Who is the customer with the highest number of orders?",
+            "generated_sql": "SELECT c.company_name, COUNT(o.order_id) AS order_count FROM customers c JOIN orders o ON c.customer_id = o.customer_id GROUP BY c.customer_id ORDER BY order_count DESC LIMIT 1",
+            "expected_sql": "SELECT customer_id, COUNT(order_id) AS total_orders FROM orders GROUP BY customer_id ORDER BY total_orders DESC LIMIT 1",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "company_name": "Save-a-lot Markets",
+                    "order_count": 31
+                }
+            ],
+            "expected_rows": [
+                {
+                    "customer_id": "SAVEA",
+                    "total_orders": 31
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 61.39160000020638,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_002",
+            "category": "complex",
+            "question": "What is the best selling product?",
+            "generated_sql": "SELECT p.product_name, SUM(od.quantity * od.unit_price * (1 - od.discount)) AS total_sales FROM order_details od JOIN products p ON od.product_id = p.product_id GROUP BY p.product_id, p.product_name ORDER BY total_sales DESC LIMIT 1",
+            "expected_sql": "SELECT product_id, SUM(quantity) AS total_quantity FROM order_details GROUP BY product_id ORDER BY total_quantity DESC LIMIT 1",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "product_name": "Côte de Blaye",
+                    "total_sales": 141396.7356273254
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_id": 60,
+                    "total_quantity": 1577
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 57.55140003748238,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_003",
+            "category": "complex",
+            "question": "Find categories with average product price above 30.",
+            "generated_sql": "SELECT c.category_name, AVG(p.unit_price) AS average_price FROM products p JOIN categories c ON p.category_id = c.category_id GROUP BY c.category_id HAVING AVG(p.unit_price) > 30",
+            "expected_sql": "SELECT category_id, AVG(unit_price) FROM products GROUP BY category_id HAVING AVG(unit_price) > 30",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "category_name": "Produce",
+                    "average_price": 32.369999694824216
+                },
+                {
+                    "category_name": "Beverages",
+                    "average_price": 37.979166666666664
+                },
+                {
+                    "category_name": "Meat/Poultry",
+                    "average_price": 54.00666666030884
+                }
+            ],
+            "expected_rows": [
+                {
+                    "category_id": 7,
+                    "avg": 32.369999694824216
+                },
+                {
+                    "category_id": 1,
+                    "avg": 37.979166666666664
+                },
+                {
+                    "category_id": 6,
+                    "avg": 54.00666666030884
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 47.85919998539612,
+            "error": null,
+            "generated_row_count": 3,
+            "expected_row_count": 3,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_004",
+            "category": "complex",
+            "question": "Which employee generated the highest sales?",
+            "generated_sql": "SELECT e.last_name, e.first_name, SUM(od.total_order_value) AS total_sales FROM orders o JOIN (SELECT order_id, SUM(unit_price * quantity * (1 - discount)) AS total_order_value FROM order_details GROUP BY order_id) od ON o.order_id = od.order_id JOIN employees e ON o.employee_id = e.employee_id GROUP BY e.employee_id ORDER BY total_sales DESC LIMIT 1",
+            "expected_sql": "SELECT employees.employee_id, SUM(order_details.unit_price * order_details.quantity) AS sales FROM employees JOIN orders ON employees.employee_id = orders.employee_id JOIN order_details ON orders.order_id = order_details.order_id GROUP BY employees.employee_id ORDER BY sales DESC LIMIT 1",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "last_name": "Peacock",
+                    "first_name": "Margaret",
+                    "total_sales": 232890.84598203754
+                }
+            ],
+            "expected_rows": [
+                {
+                    "employee_id": 4,
+                    "sales": 250187.4502530098
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 53.714799985755235,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_005",
+            "category": "complex",
+            "question": "Find customers who never placed an order.",
+            "generated_sql": "SELECT customers.* FROM customers LEFT JOIN orders ON customers.customer_id = orders.customer_id WHERE orders.order_id IS NULL",
+            "expected_sql": "SELECT customers.company_name FROM customers LEFT JOIN orders ON customers.customer_id = orders.customer_id WHERE orders.order_id IS NULL",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "PARIS",
+                    "company_name": "Paris spécialités",
+                    "contact_name": "Marie Bertrand",
+                    "contact_title": "Owner",
+                    "address": "265, boulevard Charonne",
+                    "city": "Paris",
+                    "region": null,
+                    "postal_code": "75012",
+                    "country": "France",
+                    "phone": "(1) 42.34.22.66",
+                    "fax": "(1) 42.34.22.77"
+                },
+                {
+                    "customer_id": "FISSA",
+                    "company_name": "FISSA Fabrica Inter. Salchichas S.A.",
+                    "contact_name": "Diego Roel",
+                    "contact_title": "Accounting Manager",
+                    "address": "C/ Moralzarzal, 86",
+                    "city": "Madrid",
+                    "region": null,
+                    "postal_code": "28034",
+                    "country": "Spain",
+                    "phone": "(91) 555 94 44",
+                    "fax": "(91) 555 55 93"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "company_name": "Paris spécialités"
+                },
+                {
+                    "company_name": "FISSA Fabrica Inter. Salchichas S.A."
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 49.50900003314018,
+            "error": null,
+            "generated_row_count": 2,
+            "expected_row_count": 2,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_006",
+            "category": "complex",
+            "question": "What products have never been ordered?",
+            "generated_sql": "SELECT products.product_id AS product_id, products.product_name AS product_name FROM products LEFT JOIN order_details ON products.product_id = order_details.product_id WHERE order_details.product_id IS NULL",
+            "expected_sql": "SELECT products.product_name FROM products LEFT JOIN order_details ON products.product_id = order_details.product_id WHERE order_details.order_id IS NULL",
+            "sql_correct": false,
+            "generated_rows": [],
             "expected_rows": [],
             "execution_success": true,
             "execution_correct": true,
             "retry_used": false,
             "retry_success": false,
             "retry_count": 0,
-            "execution_time_ms": 1737.8075001761317,
-            "error": null
+            "execution_time_ms": 51.67489999439567,
+            "error": null,
+            "generated_row_count": 0,
+            "expected_row_count": 0,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_007",
+            "category": "complex",
+            "question": "Show monthly revenue.",
+            "generated_sql": "SELECT EXTRACT(MONTH FROM o.order_date) AS month, SUM(od.unit_price * od.quantity * (1 - od.discount)) AS total_revenue FROM orders o JOIN order_details od ON o.order_id = od.order_id GROUP BY EXTRACT(MONTH FROM o.order_date)",
+            "expected_sql": "SELECT MONTH(order_date), SUM(unit_price * quantity) FROM orders JOIN order_details ON orders.order_id = order_details.order_id GROUP BY MONTH(order_date)",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "month": 3.0,
+                    "total_revenue": 143401.37510988378
+                },
+                {
+                    "month": 7.0,
+                    "total_revenue": 78882.75264826637
+                },
+                {
+                    "month": 11.0,
+                    "total_revenue": 89133.85397870214
+                },
+                {
+                    "month": 4.0,
+                    "total_revenue": 176831.6346444887
+                },
+                {
+                    "month": 6.0,
+                    "total_revenue": 36362.80233480245
+                }
+            ],
+            "expected_rows": [],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 50.03330000909045,
+            "error": null,
+            "generated_row_count": 12,
+            "expected_row_count": 0,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_008",
+            "category": "complex",
+            "question": "Find the three most expensive products.",
+            "generated_sql": "SELECT product_name, unit_price FROM products ORDER BY unit_price DESC LIMIT 3",
+            "expected_sql": "SELECT product_name, unit_price FROM products ORDER BY unit_price DESC LIMIT 3",
+            "sql_correct": true,
+            "generated_rows": [
+                {
+                    "product_name": "Côte de Blaye",
+                    "unit_price": 263.5
+                },
+                {
+                    "product_name": "Thüringer Rostbratwurst",
+                    "unit_price": 123.79
+                },
+                {
+                    "product_name": "Mishi Kobe Niku",
+                    "unit_price": 97.0
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_name": "Côte de Blaye",
+                    "unit_price": 263.5
+                },
+                {
+                    "product_name": "Thüringer Rostbratwurst",
+                    "unit_price": 123.79
+                },
+                {
+                    "product_name": "Mishi Kobe Niku",
+                    "unit_price": 97.0
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 53.314800024963915,
+            "error": null,
+            "generated_row_count": 3,
+            "expected_row_count": 3,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "complex_009",
+            "category": "complex",
+            "question": "Which countries generate the highest number of orders?",
+            "generated_sql": "SELECT c.country, COUNT(o.order_id) AS total_orders FROM orders o JOIN customers c ON o.customer_id = c.customer_id GROUP BY c.country ORDER BY total_orders DESC",
+            "expected_sql": "SELECT ship_country, COUNT(order_id) FROM orders GROUP BY ship_country ORDER BY COUNT(order_id) DESC",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "country": "Germany",
+                    "total_orders": 122
+                },
+                {
+                    "country": "USA",
+                    "total_orders": 122
+                },
+                {
+                    "country": "Brazil",
+                    "total_orders": 83
+                },
+                {
+                    "country": "France",
+                    "total_orders": 77
+                },
+                {
+                    "country": "UK",
+                    "total_orders": 56
+                }
+            ],
+            "expected_rows": [
+                {
+                    "ship_country": "Germany",
+                    "count": 122
+                },
+                {
+                    "ship_country": "USA",
+                    "count": 122
+                },
+                {
+                    "ship_country": "Brazil",
+                    "count": 83
+                },
+                {
+                    "ship_country": "France",
+                    "count": 77
+                },
+                {
+                    "ship_country": "UK",
+                    "count": 56
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 64.90940001094714,
+            "error": null,
+            "generated_row_count": 21,
+            "expected_row_count": 21,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "complex_010",
+            "category": "complex",
+            "question": "What is the average order value?",
+            "generated_sql": "SELECT AVG(total_amount) AS average_order_value FROM (SELECT SUM(unit_price * quantity * (1 - discount)) AS total_amount FROM order_details GROUP BY order_id) AS order_totals",
+            "expected_sql": "SELECT AVG(total) FROM (SELECT order_id, SUM(unit_price * quantity) AS total FROM order_details GROUP BY order_id)",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "average_order_value": 1525.0518537992339
+                }
+            ],
+            "expected_rows": [
+                {
+                    "avg": 1631.8778198087073
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 67.65929999528453,
+            "error": null,
+            "generated_row_count": 1,
+            "expected_row_count": 1,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "filter_001",
+            "category": "filtering",
+            "question": "Find all customers from Germany.",
+            "generated_sql": "SELECT customer_id, company_name, contact_name, contact_title, address, city, region, postal_code, country, phone, fax FROM customers WHERE country = 'Germany'",
+            "expected_sql": "SELECT * FROM customers WHERE country = 'Germany'",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "ALFKI",
+                    "company_name": "Alfreds Futterkiste",
+                    "contact_name": "Maria Anders",
+                    "contact_title": "Sales Representative",
+                    "address": "Obere Str. 57",
+                    "city": "Berlin",
+                    "region": null,
+                    "postal_code": "12209",
+                    "country": "Germany",
+                    "phone": "030-0074321",
+                    "fax": "030-0076545"
+                },
+                {
+                    "customer_id": "BLAUS",
+                    "company_name": "Blauer See Delikatessen",
+                    "contact_name": "Hanna Moos",
+                    "contact_title": "Sales Representative",
+                    "address": "Forsterstr. 57",
+                    "city": "Mannheim",
+                    "region": null,
+                    "postal_code": "68306",
+                    "country": "Germany",
+                    "phone": "0621-08460",
+                    "fax": "0621-08924"
+                },
+                {
+                    "customer_id": "DRACD",
+                    "company_name": "Drachenblut Delikatessen",
+                    "contact_name": "Sven Ottlieb",
+                    "contact_title": "Order Administrator",
+                    "address": "Walserweg 21",
+                    "city": "Aachen",
+                    "region": null,
+                    "postal_code": "52066",
+                    "country": "Germany",
+                    "phone": "0241-039123",
+                    "fax": "0241-059428"
+                },
+                {
+                    "customer_id": "FRANK",
+                    "company_name": "Frankenversand",
+                    "contact_name": "Peter Franken",
+                    "contact_title": "Marketing Manager",
+                    "address": "Berliner Platz 43",
+                    "city": "München",
+                    "region": null,
+                    "postal_code": "80805",
+                    "country": "Germany",
+                    "phone": "089-0877310",
+                    "fax": "089-0877451"
+                },
+                {
+                    "customer_id": "KOENE",
+                    "company_name": "Königlich Essen",
+                    "contact_name": "Philip Cramer",
+                    "contact_title": "Sales Associate",
+                    "address": "Maubelstr. 90",
+                    "city": "Brandenburg",
+                    "region": null,
+                    "postal_code": "14776",
+                    "country": "Germany",
+                    "phone": "0555-09876",
+                    "fax": null
+                }
+            ],
+            "expected_rows": [
+                {
+                    "customer_id": "ALFKI",
+                    "company_name": "Alfreds Futterkiste",
+                    "contact_name": "Maria Anders",
+                    "contact_title": "Sales Representative",
+                    "address": "Obere Str. 57",
+                    "city": "Berlin",
+                    "region": null,
+                    "postal_code": "12209",
+                    "country": "Germany",
+                    "phone": "030-0074321",
+                    "fax": "030-0076545"
+                },
+                {
+                    "customer_id": "BLAUS",
+                    "company_name": "Blauer See Delikatessen",
+                    "contact_name": "Hanna Moos",
+                    "contact_title": "Sales Representative",
+                    "address": "Forsterstr. 57",
+                    "city": "Mannheim",
+                    "region": null,
+                    "postal_code": "68306",
+                    "country": "Germany",
+                    "phone": "0621-08460",
+                    "fax": "0621-08924"
+                },
+                {
+                    "customer_id": "DRACD",
+                    "company_name": "Drachenblut Delikatessen",
+                    "contact_name": "Sven Ottlieb",
+                    "contact_title": "Order Administrator",
+                    "address": "Walserweg 21",
+                    "city": "Aachen",
+                    "region": null,
+                    "postal_code": "52066",
+                    "country": "Germany",
+                    "phone": "0241-039123",
+                    "fax": "0241-059428"
+                },
+                {
+                    "customer_id": "FRANK",
+                    "company_name": "Frankenversand",
+                    "contact_name": "Peter Franken",
+                    "contact_title": "Marketing Manager",
+                    "address": "Berliner Platz 43",
+                    "city": "München",
+                    "region": null,
+                    "postal_code": "80805",
+                    "country": "Germany",
+                    "phone": "089-0877310",
+                    "fax": "089-0877451"
+                },
+                {
+                    "customer_id": "KOENE",
+                    "company_name": "Königlich Essen",
+                    "contact_name": "Philip Cramer",
+                    "contact_title": "Sales Associate",
+                    "address": "Maubelstr. 90",
+                    "city": "Brandenburg",
+                    "region": null,
+                    "postal_code": "14776",
+                    "country": "Germany",
+                    "phone": "0555-09876",
+                    "fax": null
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 62.26340000284836,
+            "error": null,
+            "generated_row_count": 11,
+            "expected_row_count": 11,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_002",
+            "category": "filtering",
+            "question": "Find customers located in France.",
+            "generated_sql": "SELECT customer_id, company_name, contact_name, contact_title, address, city, region, postal_code, country, phone, fax FROM customers WHERE country = 'France'",
+            "expected_sql": "SELECT * FROM customers WHERE country = 'France'",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "BLONP",
+                    "company_name": "Blondesddsl père et fils",
+                    "contact_name": "Frédérique Citeaux",
+                    "contact_title": "Marketing Manager",
+                    "address": "24, place Kléber",
+                    "city": "Strasbourg",
+                    "region": null,
+                    "postal_code": "67000",
+                    "country": "France",
+                    "phone": "88.60.15.31",
+                    "fax": "88.60.15.32"
+                },
+                {
+                    "customer_id": "BONAP",
+                    "company_name": "Bon app'",
+                    "contact_name": "Laurence Lebihan",
+                    "contact_title": "Owner",
+                    "address": "12, rue des Bouchers",
+                    "city": "Marseille",
+                    "region": null,
+                    "postal_code": "13008",
+                    "country": "France",
+                    "phone": "91.24.45.40",
+                    "fax": "91.24.45.41"
+                },
+                {
+                    "customer_id": "DUMON",
+                    "company_name": "Du monde entier",
+                    "contact_name": "Janine Labrune",
+                    "contact_title": "Owner",
+                    "address": "67, rue des Cinquante Otages",
+                    "city": "Nantes",
+                    "region": null,
+                    "postal_code": "44000",
+                    "country": "France",
+                    "phone": "40.67.88.88",
+                    "fax": "40.67.89.89"
+                },
+                {
+                    "customer_id": "FOLIG",
+                    "company_name": "Folies gourmandes",
+                    "contact_name": "Martine Rancé",
+                    "contact_title": "Assistant Sales Agent",
+                    "address": "184, chaussée de Tournai",
+                    "city": "Lille",
+                    "region": null,
+                    "postal_code": "59000",
+                    "country": "France",
+                    "phone": "20.16.10.16",
+                    "fax": "20.16.10.17"
+                },
+                {
+                    "customer_id": "FRANR",
+                    "company_name": "France restauration",
+                    "contact_name": "Carine Schmitt",
+                    "contact_title": "Marketing Manager",
+                    "address": "54, rue Royale",
+                    "city": "Nantes",
+                    "region": null,
+                    "postal_code": "44000",
+                    "country": "France",
+                    "phone": "40.32.21.21",
+                    "fax": "40.32.21.20"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "customer_id": "BLONP",
+                    "company_name": "Blondesddsl père et fils",
+                    "contact_name": "Frédérique Citeaux",
+                    "contact_title": "Marketing Manager",
+                    "address": "24, place Kléber",
+                    "city": "Strasbourg",
+                    "region": null,
+                    "postal_code": "67000",
+                    "country": "France",
+                    "phone": "88.60.15.31",
+                    "fax": "88.60.15.32"
+                },
+                {
+                    "customer_id": "BONAP",
+                    "company_name": "Bon app'",
+                    "contact_name": "Laurence Lebihan",
+                    "contact_title": "Owner",
+                    "address": "12, rue des Bouchers",
+                    "city": "Marseille",
+                    "region": null,
+                    "postal_code": "13008",
+                    "country": "France",
+                    "phone": "91.24.45.40",
+                    "fax": "91.24.45.41"
+                },
+                {
+                    "customer_id": "DUMON",
+                    "company_name": "Du monde entier",
+                    "contact_name": "Janine Labrune",
+                    "contact_title": "Owner",
+                    "address": "67, rue des Cinquante Otages",
+                    "city": "Nantes",
+                    "region": null,
+                    "postal_code": "44000",
+                    "country": "France",
+                    "phone": "40.67.88.88",
+                    "fax": "40.67.89.89"
+                },
+                {
+                    "customer_id": "FOLIG",
+                    "company_name": "Folies gourmandes",
+                    "contact_name": "Martine Rancé",
+                    "contact_title": "Assistant Sales Agent",
+                    "address": "184, chaussée de Tournai",
+                    "city": "Lille",
+                    "region": null,
+                    "postal_code": "59000",
+                    "country": "France",
+                    "phone": "20.16.10.16",
+                    "fax": "20.16.10.17"
+                },
+                {
+                    "customer_id": "FRANR",
+                    "company_name": "France restauration",
+                    "contact_name": "Carine Schmitt",
+                    "contact_title": "Marketing Manager",
+                    "address": "54, rue Royale",
+                    "city": "Nantes",
+                    "region": null,
+                    "postal_code": "44000",
+                    "country": "France",
+                    "phone": "40.32.21.21",
+                    "fax": "40.32.21.20"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 51.911799993831664,
+            "error": null,
+            "generated_row_count": 11,
+            "expected_row_count": 11,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_003",
+            "category": "filtering",
+            "question": "List products that cost more than 50.",
+            "generated_sql": "SELECT product_id, product_name, supplier_id, category_id, quantity_per_unit, unit_price, units_in_stock, units_on_order, reorder_level, discontinued FROM products WHERE unit_price > 50",
+            "expected_sql": "SELECT * FROM products WHERE unit_price > 50",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "product_id": 9,
+                    "product_name": "Mishi Kobe Niku",
+                    "supplier_id": 4,
+                    "category_id": 6,
+                    "quantity_per_unit": "18 - 500 g pkgs.",
+                    "unit_price": 97.0,
+                    "units_in_stock": 29,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 18,
+                    "product_name": "Carnarvon Tigers",
+                    "supplier_id": 7,
+                    "category_id": 8,
+                    "quantity_per_unit": "16 kg pkg.",
+                    "unit_price": 62.5,
+                    "units_in_stock": 42,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 0
+                },
+                {
+                    "product_id": 20,
+                    "product_name": "Sir Rodney's Marmalade",
+                    "supplier_id": 8,
+                    "category_id": 3,
+                    "quantity_per_unit": "30 gift boxes",
+                    "unit_price": 81.0,
+                    "units_in_stock": 40,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 0
+                },
+                {
+                    "product_id": 29,
+                    "product_name": "Thüringer Rostbratwurst",
+                    "supplier_id": 12,
+                    "category_id": 6,
+                    "quantity_per_unit": "50 bags x 30 sausgs.",
+                    "unit_price": 123.79,
+                    "units_in_stock": 0,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 38,
+                    "product_name": "Côte de Blaye",
+                    "supplier_id": 18,
+                    "category_id": 1,
+                    "quantity_per_unit": "12 - 75 cl bottles",
+                    "unit_price": 263.5,
+                    "units_in_stock": 17,
+                    "units_on_order": 0,
+                    "reorder_level": 15,
+                    "discontinued": 0
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_id": 9,
+                    "product_name": "Mishi Kobe Niku",
+                    "supplier_id": 4,
+                    "category_id": 6,
+                    "quantity_per_unit": "18 - 500 g pkgs.",
+                    "unit_price": 97.0,
+                    "units_in_stock": 29,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 18,
+                    "product_name": "Carnarvon Tigers",
+                    "supplier_id": 7,
+                    "category_id": 8,
+                    "quantity_per_unit": "16 kg pkg.",
+                    "unit_price": 62.5,
+                    "units_in_stock": 42,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 0
+                },
+                {
+                    "product_id": 20,
+                    "product_name": "Sir Rodney's Marmalade",
+                    "supplier_id": 8,
+                    "category_id": 3,
+                    "quantity_per_unit": "30 gift boxes",
+                    "unit_price": 81.0,
+                    "units_in_stock": 40,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 0
+                },
+                {
+                    "product_id": 29,
+                    "product_name": "Thüringer Rostbratwurst",
+                    "supplier_id": 12,
+                    "category_id": 6,
+                    "quantity_per_unit": "50 bags x 30 sausgs.",
+                    "unit_price": 123.79,
+                    "units_in_stock": 0,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 38,
+                    "product_name": "Côte de Blaye",
+                    "supplier_id": 18,
+                    "category_id": 1,
+                    "quantity_per_unit": "12 - 75 cl bottles",
+                    "unit_price": 263.5,
+                    "units_in_stock": 17,
+                    "units_on_order": 0,
+                    "reorder_level": 15,
+                    "discontinued": 0
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 69.23249998362735,
+            "error": null,
+            "generated_row_count": 7,
+            "expected_row_count": 7,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_004",
+            "category": "filtering",
+            "question": "Show products that are discontinued.",
+            "generated_sql": "SELECT * FROM products WHERE discontinued = 1",
+            "expected_sql": "SELECT * FROM products WHERE discontinued = 1",
+            "sql_correct": true,
+            "generated_rows": [
+                {
+                    "product_id": 1,
+                    "product_name": "Chai",
+                    "supplier_id": 8,
+                    "category_id": 1,
+                    "quantity_per_unit": "10 boxes x 30 bags",
+                    "unit_price": 18.0,
+                    "units_in_stock": 39,
+                    "units_on_order": 0,
+                    "reorder_level": 10,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 2,
+                    "product_name": "Chang",
+                    "supplier_id": 1,
+                    "category_id": 1,
+                    "quantity_per_unit": "24 - 12 oz bottles",
+                    "unit_price": 19.0,
+                    "units_in_stock": 17,
+                    "units_on_order": 40,
+                    "reorder_level": 25,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 5,
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "supplier_id": 2,
+                    "category_id": 2,
+                    "quantity_per_unit": "36 boxes",
+                    "unit_price": 21.35,
+                    "units_in_stock": 0,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 9,
+                    "product_name": "Mishi Kobe Niku",
+                    "supplier_id": 4,
+                    "category_id": 6,
+                    "quantity_per_unit": "18 - 500 g pkgs.",
+                    "unit_price": 97.0,
+                    "units_in_stock": 29,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 17,
+                    "product_name": "Alice Mutton",
+                    "supplier_id": 7,
+                    "category_id": 6,
+                    "quantity_per_unit": "20 - 1 kg tins",
+                    "unit_price": 39.0,
+                    "units_in_stock": 0,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_id": 1,
+                    "product_name": "Chai",
+                    "supplier_id": 8,
+                    "category_id": 1,
+                    "quantity_per_unit": "10 boxes x 30 bags",
+                    "unit_price": 18.0,
+                    "units_in_stock": 39,
+                    "units_on_order": 0,
+                    "reorder_level": 10,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 2,
+                    "product_name": "Chang",
+                    "supplier_id": 1,
+                    "category_id": 1,
+                    "quantity_per_unit": "24 - 12 oz bottles",
+                    "unit_price": 19.0,
+                    "units_in_stock": 17,
+                    "units_on_order": 40,
+                    "reorder_level": 25,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 5,
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "supplier_id": 2,
+                    "category_id": 2,
+                    "quantity_per_unit": "36 boxes",
+                    "unit_price": 21.35,
+                    "units_in_stock": 0,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 9,
+                    "product_name": "Mishi Kobe Niku",
+                    "supplier_id": 4,
+                    "category_id": 6,
+                    "quantity_per_unit": "18 - 500 g pkgs.",
+                    "unit_price": 97.0,
+                    "units_in_stock": 29,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 17,
+                    "product_name": "Alice Mutton",
+                    "supplier_id": 7,
+                    "category_id": 6,
+                    "quantity_per_unit": "20 - 1 kg tins",
+                    "unit_price": 39.0,
+                    "units_in_stock": 0,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 61.9107999955304,
+            "error": null,
+            "generated_row_count": 10,
+            "expected_row_count": 10,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_005",
+            "category": "filtering",
+            "question": "Find all employees hired after 1993.",
+            "generated_sql": "SELECT employee_id, last_name, first_name, title, title_of_courtesy, birth_date, hire_date, address, city, region, postal_code, country, home_phone, extension, photo, notes, reports_to, photo_path FROM employees WHERE hire_date > '1993-01-01'",
+            "expected_sql": "SELECT * FROM employees WHERE hire_date > '1993-01-01'",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "employee_id": 4,
+                    "last_name": "Peacock",
+                    "first_name": "Margaret",
+                    "title": "Sales Representative",
+                    "title_of_courtesy": "Mrs.",
+                    "birth_date": "1937-09-19",
+                    "hire_date": "1993-05-03",
+                    "address": "4110 Old Redmond Rd.",
+                    "city": "Redmond",
+                    "region": "WA",
+                    "postal_code": "98052",
+                    "country": "USA",
+                    "home_phone": "(206) 555-8122",
+                    "extension": "5176",
+                    "photo": "",
+                    "notes": "Margaret holds a BA in English literature from Concordia College (1958) and an MA from the American Institute of Culinary Arts (1966).  She was assigned to the London office temporarily from July through November 1992.",
+                    "reports_to": 2,
+                    "photo_path": "http://accweb/emmployees/peacock.bmp"
+                },
+                {
+                    "employee_id": 5,
+                    "last_name": "Buchanan",
+                    "first_name": "Steven",
+                    "title": "Sales Manager",
+                    "title_of_courtesy": "Mr.",
+                    "birth_date": "1955-03-04",
+                    "hire_date": "1993-10-17",
+                    "address": "14 Garrett Hill",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "SW1 8JR",
+                    "country": "UK",
+                    "home_phone": "(71) 555-4848",
+                    "extension": "3453",
+                    "photo": "",
+                    "notes": "Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree in 1976.  Upon joining the company as a sales representative in 1992, he spent 6 months in an orientation program at the Seattle office and then returned to his permanent post in London.  He was promoted to sales manager in March 1993.  Mr. Buchanan has completed the courses Successful Telemarketing and International Sales Management.  He is fluent in French.",
+                    "reports_to": 2,
+                    "photo_path": "http://accweb/emmployees/buchanan.bmp"
+                },
+                {
+                    "employee_id": 6,
+                    "last_name": "Suyama",
+                    "first_name": "Michael",
+                    "title": "Sales Representative",
+                    "title_of_courtesy": "Mr.",
+                    "birth_date": "1963-07-02",
+                    "hire_date": "1993-10-17",
+                    "address": "Coventry House\\nMiner Rd.",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "EC2 7JR",
+                    "country": "UK",
+                    "home_phone": "(71) 555-7773",
+                    "extension": "428",
+                    "photo": "",
+                    "notes": "Michael is a graduate of Sussex University (MA, economics, 1983) and the University of California at Los Angeles (MBA, marketing, 1986).  He has also taken the courses Multi-Cultural Selling and Time Management for the Sales Professional.  He is fluent in Japanese and can read and write French, Portuguese, and Spanish.",
+                    "reports_to": 5,
+                    "photo_path": "http://accweb/emmployees/davolio.bmp"
+                },
+                {
+                    "employee_id": 7,
+                    "last_name": "King",
+                    "first_name": "Robert",
+                    "title": "Sales Representative",
+                    "title_of_courtesy": "Mr.",
+                    "birth_date": "1960-05-29",
+                    "hire_date": "1994-01-02",
+                    "address": "Edgeham Hollow\\nWinchester Way",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "RG1 9SP",
+                    "country": "UK",
+                    "home_phone": "(71) 555-5598",
+                    "extension": "465",
+                    "photo": "",
+                    "notes": "Robert King served in the Peace Corps and traveled extensively before completing his degree in English at the University of Michigan in 1992, the year he joined the company.  After completing a course entitled Selling in Europe, he was transferred to the London office in March 1993.",
+                    "reports_to": 5,
+                    "photo_path": "http://accweb/emmployees/davolio.bmp"
+                },
+                {
+                    "employee_id": 8,
+                    "last_name": "Callahan",
+                    "first_name": "Laura",
+                    "title": "Inside Sales Coordinator",
+                    "title_of_courtesy": "Ms.",
+                    "birth_date": "1958-01-09",
+                    "hire_date": "1994-03-05",
+                    "address": "4726 - 11th Ave. N.E.",
+                    "city": "Seattle",
+                    "region": "WA",
+                    "postal_code": "98105",
+                    "country": "USA",
+                    "home_phone": "(206) 555-1189",
+                    "extension": "2344",
+                    "photo": "",
+                    "notes": "Laura received a BA in psychology from the University of Washington.  She has also completed a course in business French.  She reads and writes French.",
+                    "reports_to": 2,
+                    "photo_path": "http://accweb/emmployees/davolio.bmp"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "employee_id": 4,
+                    "last_name": "Peacock",
+                    "first_name": "Margaret",
+                    "title": "Sales Representative",
+                    "title_of_courtesy": "Mrs.",
+                    "birth_date": "1937-09-19",
+                    "hire_date": "1993-05-03",
+                    "address": "4110 Old Redmond Rd.",
+                    "city": "Redmond",
+                    "region": "WA",
+                    "postal_code": "98052",
+                    "country": "USA",
+                    "home_phone": "(206) 555-8122",
+                    "extension": "5176",
+                    "photo": "",
+                    "notes": "Margaret holds a BA in English literature from Concordia College (1958) and an MA from the American Institute of Culinary Arts (1966).  She was assigned to the London office temporarily from July through November 1992.",
+                    "reports_to": 2,
+                    "photo_path": "http://accweb/emmployees/peacock.bmp"
+                },
+                {
+                    "employee_id": 5,
+                    "last_name": "Buchanan",
+                    "first_name": "Steven",
+                    "title": "Sales Manager",
+                    "title_of_courtesy": "Mr.",
+                    "birth_date": "1955-03-04",
+                    "hire_date": "1993-10-17",
+                    "address": "14 Garrett Hill",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "SW1 8JR",
+                    "country": "UK",
+                    "home_phone": "(71) 555-4848",
+                    "extension": "3453",
+                    "photo": "",
+                    "notes": "Steven Buchanan graduated from St. Andrews University, Scotland, with a BSC degree in 1976.  Upon joining the company as a sales representative in 1992, he spent 6 months in an orientation program at the Seattle office and then returned to his permanent post in London.  He was promoted to sales manager in March 1993.  Mr. Buchanan has completed the courses Successful Telemarketing and International Sales Management.  He is fluent in French.",
+                    "reports_to": 2,
+                    "photo_path": "http://accweb/emmployees/buchanan.bmp"
+                },
+                {
+                    "employee_id": 6,
+                    "last_name": "Suyama",
+                    "first_name": "Michael",
+                    "title": "Sales Representative",
+                    "title_of_courtesy": "Mr.",
+                    "birth_date": "1963-07-02",
+                    "hire_date": "1993-10-17",
+                    "address": "Coventry House\\nMiner Rd.",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "EC2 7JR",
+                    "country": "UK",
+                    "home_phone": "(71) 555-7773",
+                    "extension": "428",
+                    "photo": "",
+                    "notes": "Michael is a graduate of Sussex University (MA, economics, 1983) and the University of California at Los Angeles (MBA, marketing, 1986).  He has also taken the courses Multi-Cultural Selling and Time Management for the Sales Professional.  He is fluent in Japanese and can read and write French, Portuguese, and Spanish.",
+                    "reports_to": 5,
+                    "photo_path": "http://accweb/emmployees/davolio.bmp"
+                },
+                {
+                    "employee_id": 7,
+                    "last_name": "King",
+                    "first_name": "Robert",
+                    "title": "Sales Representative",
+                    "title_of_courtesy": "Mr.",
+                    "birth_date": "1960-05-29",
+                    "hire_date": "1994-01-02",
+                    "address": "Edgeham Hollow\\nWinchester Way",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "RG1 9SP",
+                    "country": "UK",
+                    "home_phone": "(71) 555-5598",
+                    "extension": "465",
+                    "photo": "",
+                    "notes": "Robert King served in the Peace Corps and traveled extensively before completing his degree in English at the University of Michigan in 1992, the year he joined the company.  After completing a course entitled Selling in Europe, he was transferred to the London office in March 1993.",
+                    "reports_to": 5,
+                    "photo_path": "http://accweb/emmployees/davolio.bmp"
+                },
+                {
+                    "employee_id": 8,
+                    "last_name": "Callahan",
+                    "first_name": "Laura",
+                    "title": "Inside Sales Coordinator",
+                    "title_of_courtesy": "Ms.",
+                    "birth_date": "1958-01-09",
+                    "hire_date": "1994-03-05",
+                    "address": "4726 - 11th Ave. N.E.",
+                    "city": "Seattle",
+                    "region": "WA",
+                    "postal_code": "98105",
+                    "country": "USA",
+                    "home_phone": "(206) 555-1189",
+                    "extension": "2344",
+                    "photo": "",
+                    "notes": "Laura received a BA in psychology from the University of Washington.  She has also completed a course in business French.  She reads and writes French.",
+                    "reports_to": 2,
+                    "photo_path": "http://accweb/emmployees/davolio.bmp"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 60.41259999619797,
+            "error": null,
+            "generated_row_count": 6,
+            "expected_row_count": 6,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_006",
+            "category": "filtering",
+            "question": "Show orders shipped to London.",
+            "generated_sql": "SELECT * FROM orders WHERE ship_city = 'London'",
+            "expected_sql": "SELECT * FROM orders WHERE ship_city = 'London'",
+            "sql_correct": true,
+            "generated_rows": [
+                {
+                    "order_id": 10289,
+                    "customer_id": "BSBEV",
+                    "employee_id": 7,
+                    "order_date": "1996-08-26",
+                    "required_date": "1996-09-23",
+                    "shipped_date": "1996-08-28",
+                    "ship_via": 3,
+                    "freight": 22.77,
+                    "ship_name": "B's Beverages",
+                    "ship_address": "Fauntleroy Circus",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "EC2 5NT",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10359,
+                    "customer_id": "SEVES",
+                    "employee_id": 5,
+                    "order_date": "1996-11-21",
+                    "required_date": "1996-12-19",
+                    "shipped_date": "1996-11-26",
+                    "ship_via": 3,
+                    "freight": 288.43,
+                    "ship_name": "Seven Seas Imports",
+                    "ship_address": "90 Wadhurst Rd.",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "OX15 4NB",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10364,
+                    "customer_id": "EASTC",
+                    "employee_id": 1,
+                    "order_date": "1996-11-26",
+                    "required_date": "1997-01-07",
+                    "shipped_date": "1996-12-04",
+                    "ship_via": 1,
+                    "freight": 71.97,
+                    "ship_name": "Eastern Connection",
+                    "ship_address": "35 King George",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "WX3 6FW",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10377,
+                    "customer_id": "SEVES",
+                    "employee_id": 1,
+                    "order_date": "1996-12-09",
+                    "required_date": "1997-01-06",
+                    "shipped_date": "1996-12-13",
+                    "ship_via": 3,
+                    "freight": 22.21,
+                    "ship_name": "Seven Seas Imports",
+                    "ship_address": "90 Wadhurst Rd.",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "OX15 4NB",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10388,
+                    "customer_id": "SEVES",
+                    "employee_id": 2,
+                    "order_date": "1996-12-19",
+                    "required_date": "1997-01-16",
+                    "shipped_date": "1996-12-20",
+                    "ship_via": 1,
+                    "freight": 34.86,
+                    "ship_name": "Seven Seas Imports",
+                    "ship_address": "90 Wadhurst Rd.",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "OX15 4NB",
+                    "ship_country": "UK"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "order_id": 10289,
+                    "customer_id": "BSBEV",
+                    "employee_id": 7,
+                    "order_date": "1996-08-26",
+                    "required_date": "1996-09-23",
+                    "shipped_date": "1996-08-28",
+                    "ship_via": 3,
+                    "freight": 22.77,
+                    "ship_name": "B's Beverages",
+                    "ship_address": "Fauntleroy Circus",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "EC2 5NT",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10359,
+                    "customer_id": "SEVES",
+                    "employee_id": 5,
+                    "order_date": "1996-11-21",
+                    "required_date": "1996-12-19",
+                    "shipped_date": "1996-11-26",
+                    "ship_via": 3,
+                    "freight": 288.43,
+                    "ship_name": "Seven Seas Imports",
+                    "ship_address": "90 Wadhurst Rd.",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "OX15 4NB",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10364,
+                    "customer_id": "EASTC",
+                    "employee_id": 1,
+                    "order_date": "1996-11-26",
+                    "required_date": "1997-01-07",
+                    "shipped_date": "1996-12-04",
+                    "ship_via": 1,
+                    "freight": 71.97,
+                    "ship_name": "Eastern Connection",
+                    "ship_address": "35 King George",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "WX3 6FW",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10377,
+                    "customer_id": "SEVES",
+                    "employee_id": 1,
+                    "order_date": "1996-12-09",
+                    "required_date": "1997-01-06",
+                    "shipped_date": "1996-12-13",
+                    "ship_via": 3,
+                    "freight": 22.21,
+                    "ship_name": "Seven Seas Imports",
+                    "ship_address": "90 Wadhurst Rd.",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "OX15 4NB",
+                    "ship_country": "UK"
+                },
+                {
+                    "order_id": 10388,
+                    "customer_id": "SEVES",
+                    "employee_id": 2,
+                    "order_date": "1996-12-19",
+                    "required_date": "1997-01-16",
+                    "shipped_date": "1996-12-20",
+                    "ship_via": 1,
+                    "freight": 34.86,
+                    "ship_name": "Seven Seas Imports",
+                    "ship_address": "90 Wadhurst Rd.",
+                    "ship_city": "London",
+                    "ship_region": null,
+                    "ship_postal_code": "OX15 4NB",
+                    "ship_country": "UK"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 55.157900031190366,
+            "error": null,
+            "generated_row_count": 33,
+            "expected_row_count": 33,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_007",
+            "category": "filtering",
+            "question": "Find customers whose company name starts with A.",
+            "generated_sql": "SELECT * FROM customers WHERE company_name LIKE 'A%'",
+            "expected_sql": "SELECT * FROM customers WHERE company_name LIKE 'A%'",
+            "sql_correct": true,
+            "generated_rows": [
+                {
+                    "customer_id": "ALFKI",
+                    "company_name": "Alfreds Futterkiste",
+                    "contact_name": "Maria Anders",
+                    "contact_title": "Sales Representative",
+                    "address": "Obere Str. 57",
+                    "city": "Berlin",
+                    "region": null,
+                    "postal_code": "12209",
+                    "country": "Germany",
+                    "phone": "030-0074321",
+                    "fax": "030-0076545"
+                },
+                {
+                    "customer_id": "ANATR",
+                    "company_name": "Ana Trujillo Emparedados y helados",
+                    "contact_name": "Ana Trujillo",
+                    "contact_title": "Owner",
+                    "address": "Avda. de la Constitución 2222",
+                    "city": "México D.F.",
+                    "region": null,
+                    "postal_code": "05021",
+                    "country": "Mexico",
+                    "phone": "(5) 555-4729",
+                    "fax": "(5) 555-3745"
+                },
+                {
+                    "customer_id": "ANTON",
+                    "company_name": "Antonio Moreno Taquería",
+                    "contact_name": "Antonio Moreno",
+                    "contact_title": "Owner",
+                    "address": "Mataderos  2312",
+                    "city": "México D.F.",
+                    "region": null,
+                    "postal_code": "05023",
+                    "country": "Mexico",
+                    "phone": "(5) 555-3932",
+                    "fax": null
+                },
+                {
+                    "customer_id": "AROUT",
+                    "company_name": "Around the Horn",
+                    "contact_name": "Thomas Hardy",
+                    "contact_title": "Sales Representative",
+                    "address": "120 Hanover Sq.",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "WA1 1DP",
+                    "country": "UK",
+                    "phone": "(171) 555-7788",
+                    "fax": "(171) 555-6750"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "customer_id": "ALFKI",
+                    "company_name": "Alfreds Futterkiste",
+                    "contact_name": "Maria Anders",
+                    "contact_title": "Sales Representative",
+                    "address": "Obere Str. 57",
+                    "city": "Berlin",
+                    "region": null,
+                    "postal_code": "12209",
+                    "country": "Germany",
+                    "phone": "030-0074321",
+                    "fax": "030-0076545"
+                },
+                {
+                    "customer_id": "ANATR",
+                    "company_name": "Ana Trujillo Emparedados y helados",
+                    "contact_name": "Ana Trujillo",
+                    "contact_title": "Owner",
+                    "address": "Avda. de la Constitución 2222",
+                    "city": "México D.F.",
+                    "region": null,
+                    "postal_code": "05021",
+                    "country": "Mexico",
+                    "phone": "(5) 555-4729",
+                    "fax": "(5) 555-3745"
+                },
+                {
+                    "customer_id": "ANTON",
+                    "company_name": "Antonio Moreno Taquería",
+                    "contact_name": "Antonio Moreno",
+                    "contact_title": "Owner",
+                    "address": "Mataderos  2312",
+                    "city": "México D.F.",
+                    "region": null,
+                    "postal_code": "05023",
+                    "country": "Mexico",
+                    "phone": "(5) 555-3932",
+                    "fax": null
+                },
+                {
+                    "customer_id": "AROUT",
+                    "company_name": "Around the Horn",
+                    "contact_name": "Thomas Hardy",
+                    "contact_title": "Sales Representative",
+                    "address": "120 Hanover Sq.",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "WA1 1DP",
+                    "country": "UK",
+                    "phone": "(171) 555-7788",
+                    "fax": "(171) 555-6750"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 67.31290003517643,
+            "error": null,
+            "generated_row_count": 4,
+            "expected_row_count": 4,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "filter_008",
+            "category": "filtering",
+            "question": "List products with stock below 20 units.",
+            "generated_sql": "SELECT product_id, product_name, units_in_stock FROM products WHERE units_in_stock < 20",
+            "expected_sql": "SELECT * FROM products WHERE units_in_stock < 20",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "product_id": 2,
+                    "product_name": "Chang",
+                    "units_in_stock": 17
+                },
+                {
+                    "product_id": 3,
+                    "product_name": "Aniseed Syrup",
+                    "units_in_stock": 13
+                },
+                {
+                    "product_id": 5,
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "units_in_stock": 0
+                },
+                {
+                    "product_id": 7,
+                    "product_name": "Uncle Bob's Organic Dried Pears",
+                    "units_in_stock": 15
+                },
+                {
+                    "product_id": 8,
+                    "product_name": "Northwoods Cranberry Sauce",
+                    "units_in_stock": 6
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_id": 2,
+                    "product_name": "Chang",
+                    "supplier_id": 1,
+                    "category_id": 1,
+                    "quantity_per_unit": "24 - 12 oz bottles",
+                    "unit_price": 19.0,
+                    "units_in_stock": 17,
+                    "units_on_order": 40,
+                    "reorder_level": 25,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 3,
+                    "product_name": "Aniseed Syrup",
+                    "supplier_id": 1,
+                    "category_id": 2,
+                    "quantity_per_unit": "12 - 550 ml bottles",
+                    "unit_price": 10.0,
+                    "units_in_stock": 13,
+                    "units_on_order": 70,
+                    "reorder_level": 25,
+                    "discontinued": 0
+                },
+                {
+                    "product_id": 5,
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "supplier_id": 2,
+                    "category_id": 2,
+                    "quantity_per_unit": "36 boxes",
+                    "unit_price": 21.35,
+                    "units_in_stock": 0,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 1
+                },
+                {
+                    "product_id": 7,
+                    "product_name": "Uncle Bob's Organic Dried Pears",
+                    "supplier_id": 3,
+                    "category_id": 7,
+                    "quantity_per_unit": "12 - 1 lb pkgs.",
+                    "unit_price": 30.0,
+                    "units_in_stock": 15,
+                    "units_on_order": 0,
+                    "reorder_level": 10,
+                    "discontinued": 0
+                },
+                {
+                    "product_id": 8,
+                    "product_name": "Northwoods Cranberry Sauce",
+                    "supplier_id": 3,
+                    "category_id": 2,
+                    "quantity_per_unit": "12 - 12 oz jars",
+                    "unit_price": 40.0,
+                    "units_in_stock": 6,
+                    "units_on_order": 0,
+                    "reorder_level": 0,
+                    "discontinued": 0
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 62.062099983450025,
+            "error": null,
+            "generated_row_count": 26,
+            "expected_row_count": 26,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_009",
+            "category": "filtering",
+            "question": "Find orders shipped to France or Germany.",
+            "generated_sql": "SELECT * FROM orders WHERE ship_country IN ('France', 'Germany')",
+            "expected_sql": "SELECT * FROM orders WHERE ship_country IN ('France','Germany')",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "order_id": 10248,
+                    "customer_id": "VINET",
+                    "employee_id": 5,
+                    "order_date": "1996-07-04",
+                    "required_date": "1996-08-01",
+                    "shipped_date": "1996-07-16",
+                    "ship_via": 3,
+                    "freight": 32.38,
+                    "ship_name": "Vins et alcools Chevalier",
+                    "ship_address": "59 rue de l'Abbaye",
+                    "ship_city": "Reims",
+                    "ship_region": null,
+                    "ship_postal_code": "51100",
+                    "ship_country": "France"
+                },
+                {
+                    "order_id": 10249,
+                    "customer_id": "TOMSP",
+                    "employee_id": 6,
+                    "order_date": "1996-07-05",
+                    "required_date": "1996-08-16",
+                    "shipped_date": "1996-07-10",
+                    "ship_via": 1,
+                    "freight": 11.61,
+                    "ship_name": "Toms Spezialitäten",
+                    "ship_address": "Luisenstr. 48",
+                    "ship_city": "Münster",
+                    "ship_region": null,
+                    "ship_postal_code": "44087",
+                    "ship_country": "Germany"
+                },
+                {
+                    "order_id": 10251,
+                    "customer_id": "VICTE",
+                    "employee_id": 3,
+                    "order_date": "1996-07-08",
+                    "required_date": "1996-08-05",
+                    "shipped_date": "1996-07-15",
+                    "ship_via": 1,
+                    "freight": 41.34,
+                    "ship_name": "Victuailles en stock",
+                    "ship_address": "2, rue du Commerce",
+                    "ship_city": "Lyon",
+                    "ship_region": null,
+                    "ship_postal_code": "69004",
+                    "ship_country": "France"
+                },
+                {
+                    "order_id": 10260,
+                    "customer_id": "OTTIK",
+                    "employee_id": 4,
+                    "order_date": "1996-07-19",
+                    "required_date": "1996-08-16",
+                    "shipped_date": "1996-07-29",
+                    "ship_via": 1,
+                    "freight": 55.09,
+                    "ship_name": "Ottilies Käseladen",
+                    "ship_address": "Mehrheimerstr. 369",
+                    "ship_city": "Köln",
+                    "ship_region": null,
+                    "ship_postal_code": "50739",
+                    "ship_country": "Germany"
+                },
+                {
+                    "order_id": 10265,
+                    "customer_id": "BLONP",
+                    "employee_id": 2,
+                    "order_date": "1996-07-25",
+                    "required_date": "1996-08-22",
+                    "shipped_date": "1996-08-12",
+                    "ship_via": 1,
+                    "freight": 55.28,
+                    "ship_name": "Blondel père et fils",
+                    "ship_address": "24, place Kléber",
+                    "ship_city": "Strasbourg",
+                    "ship_region": null,
+                    "ship_postal_code": "67000",
+                    "ship_country": "France"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "order_id": 10248,
+                    "customer_id": "VINET",
+                    "employee_id": 5,
+                    "order_date": "1996-07-04",
+                    "required_date": "1996-08-01",
+                    "shipped_date": "1996-07-16",
+                    "ship_via": 3,
+                    "freight": 32.38,
+                    "ship_name": "Vins et alcools Chevalier",
+                    "ship_address": "59 rue de l'Abbaye",
+                    "ship_city": "Reims",
+                    "ship_region": null,
+                    "ship_postal_code": "51100",
+                    "ship_country": "France"
+                },
+                {
+                    "order_id": 10249,
+                    "customer_id": "TOMSP",
+                    "employee_id": 6,
+                    "order_date": "1996-07-05",
+                    "required_date": "1996-08-16",
+                    "shipped_date": "1996-07-10",
+                    "ship_via": 1,
+                    "freight": 11.61,
+                    "ship_name": "Toms Spezialitäten",
+                    "ship_address": "Luisenstr. 48",
+                    "ship_city": "Münster",
+                    "ship_region": null,
+                    "ship_postal_code": "44087",
+                    "ship_country": "Germany"
+                },
+                {
+                    "order_id": 10251,
+                    "customer_id": "VICTE",
+                    "employee_id": 3,
+                    "order_date": "1996-07-08",
+                    "required_date": "1996-08-05",
+                    "shipped_date": "1996-07-15",
+                    "ship_via": 1,
+                    "freight": 41.34,
+                    "ship_name": "Victuailles en stock",
+                    "ship_address": "2, rue du Commerce",
+                    "ship_city": "Lyon",
+                    "ship_region": null,
+                    "ship_postal_code": "69004",
+                    "ship_country": "France"
+                },
+                {
+                    "order_id": 10260,
+                    "customer_id": "OTTIK",
+                    "employee_id": 4,
+                    "order_date": "1996-07-19",
+                    "required_date": "1996-08-16",
+                    "shipped_date": "1996-07-29",
+                    "ship_via": 1,
+                    "freight": 55.09,
+                    "ship_name": "Ottilies Käseladen",
+                    "ship_address": "Mehrheimerstr. 369",
+                    "ship_city": "Köln",
+                    "ship_region": null,
+                    "ship_postal_code": "50739",
+                    "ship_country": "Germany"
+                },
+                {
+                    "order_id": 10265,
+                    "customer_id": "BLONP",
+                    "employee_id": 2,
+                    "order_date": "1996-07-25",
+                    "required_date": "1996-08-22",
+                    "shipped_date": "1996-08-12",
+                    "ship_via": 1,
+                    "freight": 55.28,
+                    "ship_name": "Blondel père et fils",
+                    "ship_address": "24, place Kléber",
+                    "ship_city": "Strasbourg",
+                    "ship_region": null,
+                    "ship_postal_code": "67000",
+                    "ship_country": "France"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 55.441100033931434,
+            "error": null,
+            "generated_row_count": 199,
+            "expected_row_count": 199,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "filter_010",
+            "category": "filtering",
+            "question": "Find customers without a fax number.",
+            "generated_sql": "SELECT customer_id, company_name, contact_name, contact_title, address, city, region, postal_code, country, phone, fax FROM customers WHERE fax IS NULL",
+            "expected_sql": "SELECT * FROM customers WHERE fax IS NULL",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "ANTON",
+                    "company_name": "Antonio Moreno Taquería",
+                    "contact_name": "Antonio Moreno",
+                    "contact_title": "Owner",
+                    "address": "Mataderos  2312",
+                    "city": "México D.F.",
+                    "region": null,
+                    "postal_code": "05023",
+                    "country": "Mexico",
+                    "phone": "(5) 555-3932",
+                    "fax": null
+                },
+                {
+                    "customer_id": "BSBEV",
+                    "company_name": "B's Beverages",
+                    "contact_name": "Victoria Ashworth",
+                    "contact_title": "Sales Representative",
+                    "address": "Fauntleroy Circus",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "EC2 5NT",
+                    "country": "UK",
+                    "phone": "(171) 555-1212",
+                    "fax": null
+                },
+                {
+                    "customer_id": "CHOPS",
+                    "company_name": "Chop-suey Chinese",
+                    "contact_name": "Yang Wang",
+                    "contact_title": "Owner",
+                    "address": "Hauptstr. 29",
+                    "city": "Bern",
+                    "region": null,
+                    "postal_code": "3012",
+                    "country": "Switzerland",
+                    "phone": "0452-076545",
+                    "fax": null
+                },
+                {
+                    "customer_id": "COMMI",
+                    "company_name": "Comércio Mineiro",
+                    "contact_name": "Pedro Afonso",
+                    "contact_title": "Sales Associate",
+                    "address": "Av. dos Lusíadas, 23",
+                    "city": "Sao Paulo",
+                    "region": "SP",
+                    "postal_code": "05432-043",
+                    "country": "Brazil",
+                    "phone": "(11) 555-7647",
+                    "fax": null
+                },
+                {
+                    "customer_id": "FAMIA",
+                    "company_name": "Familia Arquibaldo",
+                    "contact_name": "Aria Cruz",
+                    "contact_title": "Marketing Assistant",
+                    "address": "Rua Orós, 92",
+                    "city": "Sao Paulo",
+                    "region": "SP",
+                    "postal_code": "05442-030",
+                    "country": "Brazil",
+                    "phone": "(11) 555-9857",
+                    "fax": null
+                }
+            ],
+            "expected_rows": [
+                {
+                    "customer_id": "ANTON",
+                    "company_name": "Antonio Moreno Taquería",
+                    "contact_name": "Antonio Moreno",
+                    "contact_title": "Owner",
+                    "address": "Mataderos  2312",
+                    "city": "México D.F.",
+                    "region": null,
+                    "postal_code": "05023",
+                    "country": "Mexico",
+                    "phone": "(5) 555-3932",
+                    "fax": null
+                },
+                {
+                    "customer_id": "BSBEV",
+                    "company_name": "B's Beverages",
+                    "contact_name": "Victoria Ashworth",
+                    "contact_title": "Sales Representative",
+                    "address": "Fauntleroy Circus",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "EC2 5NT",
+                    "country": "UK",
+                    "phone": "(171) 555-1212",
+                    "fax": null
+                },
+                {
+                    "customer_id": "CHOPS",
+                    "company_name": "Chop-suey Chinese",
+                    "contact_name": "Yang Wang",
+                    "contact_title": "Owner",
+                    "address": "Hauptstr. 29",
+                    "city": "Bern",
+                    "region": null,
+                    "postal_code": "3012",
+                    "country": "Switzerland",
+                    "phone": "0452-076545",
+                    "fax": null
+                },
+                {
+                    "customer_id": "COMMI",
+                    "company_name": "Comércio Mineiro",
+                    "contact_name": "Pedro Afonso",
+                    "contact_title": "Sales Associate",
+                    "address": "Av. dos Lusíadas, 23",
+                    "city": "Sao Paulo",
+                    "region": "SP",
+                    "postal_code": "05432-043",
+                    "country": "Brazil",
+                    "phone": "(11) 555-7647",
+                    "fax": null
+                },
+                {
+                    "customer_id": "FAMIA",
+                    "company_name": "Familia Arquibaldo",
+                    "contact_name": "Aria Cruz",
+                    "contact_title": "Marketing Assistant",
+                    "address": "Rua Orós, 92",
+                    "city": "Sao Paulo",
+                    "region": "SP",
+                    "postal_code": "05442-030",
+                    "country": "Brazil",
+                    "phone": "(11) 555-9857",
+                    "fax": null
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 54.836499970406294,
+            "error": null,
+            "generated_row_count": 22,
+            "expected_row_count": 22,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_001",
+            "category": "join",
+            "question": "Which customers have placed orders?",
+            "generated_sql": "SELECT DISTINCT c.* FROM customers c JOIN orders o ON c.customer_id = o.customer_id",
+            "expected_sql": "SELECT DISTINCT customers.company_name FROM customers JOIN orders ON customers.customer_id = orders.customer_id",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "REGGC",
+                    "company_name": "Reggiani Caseifici",
+                    "contact_name": "Maurizio Moroni",
+                    "contact_title": "Sales Associate",
+                    "address": "Strada Provinciale 124",
+                    "city": "Reggio Emilia",
+                    "region": null,
+                    "postal_code": "42100",
+                    "country": "Italy",
+                    "phone": "0522-556721",
+                    "fax": "0522-556722"
+                },
+                {
+                    "customer_id": "HILAA",
+                    "company_name": "HILARION-Abastos",
+                    "contact_name": "Carlos Hernández",
+                    "contact_title": "Sales Representative",
+                    "address": "Carrera 22 con Ave. Carlos Soublette #8-35",
+                    "city": "San Cristóbal",
+                    "region": "Táchira",
+                    "postal_code": "5022",
+                    "country": "Venezuela",
+                    "phone": "(5) 555-1340",
+                    "fax": "(5) 555-1948"
+                },
+                {
+                    "customer_id": "BSBEV",
+                    "company_name": "B's Beverages",
+                    "contact_name": "Victoria Ashworth",
+                    "contact_title": "Sales Representative",
+                    "address": "Fauntleroy Circus",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "EC2 5NT",
+                    "country": "UK",
+                    "phone": "(171) 555-1212",
+                    "fax": null
+                },
+                {
+                    "customer_id": "BERGS",
+                    "company_name": "Berglunds snabbköp",
+                    "contact_name": "Christina Berglund",
+                    "contact_title": "Order Administrator",
+                    "address": "Berguvsvägen  8",
+                    "city": "Luleå",
+                    "region": null,
+                    "postal_code": "S-958 22",
+                    "country": "Sweden",
+                    "phone": "0921-12 34 65",
+                    "fax": "0921-12 34 67"
+                },
+                {
+                    "customer_id": "WANDK",
+                    "company_name": "Die Wandernde Kuh",
+                    "contact_name": "Rita Müller",
+                    "contact_title": "Sales Representative",
+                    "address": "Adenauerallee 900",
+                    "city": "Stuttgart",
+                    "region": null,
+                    "postal_code": "70563",
+                    "country": "Germany",
+                    "phone": "0711-020361",
+                    "fax": "0711-035428"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "company_name": "Wilman Kala"
+                },
+                {
+                    "company_name": "Magazzini Alimentari Riuniti"
+                },
+                {
+                    "company_name": "The Cracker Box"
+                },
+                {
+                    "company_name": "Wellington Importadora"
+                },
+                {
+                    "company_name": "Let's Stop N Shop"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 64.99079999048263,
+            "error": null,
+            "generated_row_count": 89,
+            "expected_row_count": 89,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_002",
+            "category": "join",
+            "question": "How many orders has each customer placed?",
+            "generated_sql": "SELECT c.customer_id, COUNT(o.order_id) AS order_count FROM customers c JOIN orders o ON c.customer_id = o.customer_id GROUP BY c.customer_id",
+            "expected_sql": "SELECT customers.company_name, COUNT(orders.order_id) FROM customers JOIN orders ON customers.customer_id = orders.customer_id GROUP BY customers.company_name",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "TOMSP",
+                    "order_count": 6
+                },
+                {
+                    "customer_id": "LONEP",
+                    "order_count": 8
+                },
+                {
+                    "customer_id": "OLDWO",
+                    "order_count": 10
+                },
+                {
+                    "customer_id": "WARTH",
+                    "order_count": 15
+                },
+                {
+                    "customer_id": "MAGAA",
+                    "order_count": 10
+                }
+            ],
+            "expected_rows": [
+                {
+                    "company_name": "Wilman Kala",
+                    "count": 7
+                },
+                {
+                    "company_name": "Magazzini Alimentari Riuniti",
+                    "count": 10
+                },
+                {
+                    "company_name": "The Cracker Box",
+                    "count": 3
+                },
+                {
+                    "company_name": "Wellington Importadora",
+                    "count": 9
+                },
+                {
+                    "company_name": "Let's Stop N Shop",
+                    "count": 4
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 57.47759999940172,
+            "error": null,
+            "generated_row_count": 89,
+            "expected_row_count": 89,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_003",
+            "category": "join",
+            "question": "List all products with their category names.",
+            "generated_sql": "SELECT products.product_name, categories.category_name FROM products INNER JOIN categories ON products.category_id = categories.category_id",
+            "expected_sql": "SELECT products.product_name, categories.category_name FROM products JOIN categories ON products.category_id = categories.category_id",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "product_name": "Chai",
+                    "category_name": "Beverages"
+                },
+                {
+                    "product_name": "Chang",
+                    "category_name": "Beverages"
+                },
+                {
+                    "product_name": "Aniseed Syrup",
+                    "category_name": "Condiments"
+                },
+                {
+                    "product_name": "Chef Anton's Cajun Seasoning",
+                    "category_name": "Condiments"
+                },
+                {
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "category_name": "Condiments"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_name": "Chai",
+                    "category_name": "Beverages"
+                },
+                {
+                    "product_name": "Chang",
+                    "category_name": "Beverages"
+                },
+                {
+                    "product_name": "Aniseed Syrup",
+                    "category_name": "Condiments"
+                },
+                {
+                    "product_name": "Chef Anton's Cajun Seasoning",
+                    "category_name": "Condiments"
+                },
+                {
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "category_name": "Condiments"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 55.84960000123829,
+            "error": null,
+            "generated_row_count": 77,
+            "expected_row_count": 77,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_004",
+            "category": "join",
+            "question": "Show each order with the customer's company name.",
+            "generated_sql": "SELECT orders.*, customers.company_name AS customer_company_name FROM orders JOIN customers ON orders.customer_id = customers.customer_id",
+            "expected_sql": "SELECT orders.order_id, customers.company_name FROM orders JOIN customers ON orders.customer_id = customers.customer_id",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "order_id": 10248,
+                    "customer_id": "VINET",
+                    "employee_id": 5,
+                    "order_date": "1996-07-04",
+                    "required_date": "1996-08-01",
+                    "shipped_date": "1996-07-16",
+                    "ship_via": 3,
+                    "freight": 32.38,
+                    "ship_name": "Vins et alcools Chevalier",
+                    "ship_address": "59 rue de l'Abbaye",
+                    "ship_city": "Reims",
+                    "ship_region": null,
+                    "ship_postal_code": "51100",
+                    "ship_country": "France",
+                    "customer_company_name": "Vins et alcools Chevalier"
+                },
+                {
+                    "order_id": 10249,
+                    "customer_id": "TOMSP",
+                    "employee_id": 6,
+                    "order_date": "1996-07-05",
+                    "required_date": "1996-08-16",
+                    "shipped_date": "1996-07-10",
+                    "ship_via": 1,
+                    "freight": 11.61,
+                    "ship_name": "Toms Spezialitäten",
+                    "ship_address": "Luisenstr. 48",
+                    "ship_city": "Münster",
+                    "ship_region": null,
+                    "ship_postal_code": "44087",
+                    "ship_country": "Germany",
+                    "customer_company_name": "Toms Spezialitäten"
+                },
+                {
+                    "order_id": 10250,
+                    "customer_id": "HANAR",
+                    "employee_id": 4,
+                    "order_date": "1996-07-08",
+                    "required_date": "1996-08-05",
+                    "shipped_date": "1996-07-12",
+                    "ship_via": 2,
+                    "freight": 65.83,
+                    "ship_name": "Hanari Carnes",
+                    "ship_address": "Rua do Paço, 67",
+                    "ship_city": "Rio de Janeiro",
+                    "ship_region": "RJ",
+                    "ship_postal_code": "05454-876",
+                    "ship_country": "Brazil",
+                    "customer_company_name": "Hanari Carnes"
+                },
+                {
+                    "order_id": 10251,
+                    "customer_id": "VICTE",
+                    "employee_id": 3,
+                    "order_date": "1996-07-08",
+                    "required_date": "1996-08-05",
+                    "shipped_date": "1996-07-15",
+                    "ship_via": 1,
+                    "freight": 41.34,
+                    "ship_name": "Victuailles en stock",
+                    "ship_address": "2, rue du Commerce",
+                    "ship_city": "Lyon",
+                    "ship_region": null,
+                    "ship_postal_code": "69004",
+                    "ship_country": "France",
+                    "customer_company_name": "Victuailles en stock"
+                },
+                {
+                    "order_id": 10252,
+                    "customer_id": "SUPRD",
+                    "employee_id": 4,
+                    "order_date": "1996-07-09",
+                    "required_date": "1996-08-06",
+                    "shipped_date": "1996-07-11",
+                    "ship_via": 2,
+                    "freight": 51.3,
+                    "ship_name": "Suprêmes délices",
+                    "ship_address": "Boulevard Tirou, 255",
+                    "ship_city": "Charleroi",
+                    "ship_region": null,
+                    "ship_postal_code": "B-6000",
+                    "ship_country": "Belgium",
+                    "customer_company_name": "Suprêmes délices"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "order_id": 10248,
+                    "company_name": "Vins et alcools Chevalier"
+                },
+                {
+                    "order_id": 10249,
+                    "company_name": "Toms Spezialitäten"
+                },
+                {
+                    "order_id": 10250,
+                    "company_name": "Hanari Carnes"
+                },
+                {
+                    "order_id": 10251,
+                    "company_name": "Victuailles en stock"
+                },
+                {
+                    "order_id": 10252,
+                    "company_name": "Suprêmes délices"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 80.65959997475147,
+            "error": null,
+            "generated_row_count": 830,
+            "expected_row_count": 830,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_005",
+            "category": "join",
+            "question": "Which employees handled the most orders?",
+            "generated_sql": "SELECT e.employee_id, e.last_name, e.first_name, COUNT(o.order_id) AS order_count FROM employees e JOIN orders o ON e.employee_id = o.employee_id GROUP BY e.employee_id, e.last_name, e.first_name ORDER BY order_count DESC",
+            "expected_sql": "SELECT employees.first_name, employees.last_name, COUNT(orders.order_id) FROM employees JOIN orders ON employees.employee_id = orders.employee_id GROUP BY employees.employee_id",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "employee_id": 4,
+                    "last_name": "Peacock",
+                    "first_name": "Margaret",
+                    "order_count": 156
+                },
+                {
+                    "employee_id": 3,
+                    "last_name": "Leverling",
+                    "first_name": "Janet",
+                    "order_count": 127
+                },
+                {
+                    "employee_id": 1,
+                    "last_name": "Davolio",
+                    "first_name": "Nancy",
+                    "order_count": 123
+                },
+                {
+                    "employee_id": 8,
+                    "last_name": "Callahan",
+                    "first_name": "Laura",
+                    "order_count": 104
+                },
+                {
+                    "employee_id": 2,
+                    "last_name": "Fuller",
+                    "first_name": "Andrew",
+                    "order_count": 96
+                }
+            ],
+            "expected_rows": [
+                {
+                    "first_name": "Laura",
+                    "last_name": "Callahan",
+                    "count": 104
+                },
+                {
+                    "first_name": "Robert",
+                    "last_name": "King",
+                    "count": 72
+                },
+                {
+                    "first_name": "Anne",
+                    "last_name": "Dodsworth",
+                    "count": 43
+                },
+                {
+                    "first_name": "Nancy",
+                    "last_name": "Davolio",
+                    "count": 123
+                },
+                {
+                    "first_name": "Steven",
+                    "last_name": "Buchanan",
+                    "count": 42
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 64.66329999966547,
+            "error": null,
+            "generated_row_count": 9,
+            "expected_row_count": 9,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_006",
+            "category": "join",
+            "question": "Find the total sales for each product.",
+            "generated_sql": "SELECT p.product_id, p.product_name, SUM(od.unit_price * od.quantity * (1 - od.discount)) AS total_sales FROM order_details od JOIN products p ON od.product_id = p.product_id GROUP BY p.product_id, p.product_name",
+            "expected_sql": "SELECT products.product_name, SUM(order_details.unit_price * order_details.quantity) FROM products JOIN order_details ON products.product_id = order_details.product_id GROUP BY products.product_name",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "product_id": 74,
+                    "product_name": "Longlife Tofu",
+                    "total_sales": 2432.4999990463257
+                },
+                {
+                    "product_id": 54,
+                    "product_name": "Tourtière",
+                    "total_sales": 4728.237450592593
+                },
+                {
+                    "product_id": 29,
+                    "product_name": "Thüringer Rostbratwurst",
+                    "total_sales": 80368.6724385033
+                },
+                {
+                    "product_id": 71,
+                    "product_name": "Flotemysost",
+                    "total_sales": 19551.025301235914
+                },
+                {
+                    "product_id": 4,
+                    "product_name": "Chef Anton's Cajun Seasoning",
+                    "total_sales": 8567.900032654405
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_name": "Pâté chinois",
+                    "sum": 19512.000343322754
+                },
+                {
+                    "product_name": "Flotemysost",
+                    "sum": 20876.500328063965
+                },
+                {
+                    "product_name": "Camembert Pierrot",
+                    "sum": 50286.00037384033
+                },
+                {
+                    "product_name": "Inlagd Sill",
+                    "sum": 14542.599962234497
+                },
+                {
+                    "product_name": "Thüringer Rostbratwurst",
+                    "sum": 87736.40051269531
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 1213480.386100011,
+            "error": null,
+            "generated_row_count": 77,
+            "expected_row_count": 77,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_007",
+            "category": "join",
+            "question": "Which suppliers provide each product?",
+            "generated_sql": "SELECT p.product_name AS product_name, s.company_name AS supplier_company FROM products p JOIN suppliers s ON p.supplier_id = s.supplier_id",
+            "expected_sql": "SELECT products.product_name, suppliers.company_name FROM products JOIN suppliers ON products.supplier_id = suppliers.supplier_id",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "product_name": "Chai",
+                    "supplier_company": "Specialty Biscuits, Ltd."
+                },
+                {
+                    "product_name": "Chang",
+                    "supplier_company": "Exotic Liquids"
+                },
+                {
+                    "product_name": "Aniseed Syrup",
+                    "supplier_company": "Exotic Liquids"
+                },
+                {
+                    "product_name": "Chef Anton's Cajun Seasoning",
+                    "supplier_company": "New Orleans Cajun Delights"
+                },
+                {
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "supplier_company": "New Orleans Cajun Delights"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "product_name": "Chai",
+                    "company_name": "Specialty Biscuits, Ltd."
+                },
+                {
+                    "product_name": "Chang",
+                    "company_name": "Exotic Liquids"
+                },
+                {
+                    "product_name": "Aniseed Syrup",
+                    "company_name": "Exotic Liquids"
+                },
+                {
+                    "product_name": "Chef Anton's Cajun Seasoning",
+                    "company_name": "New Orleans Cajun Delights"
+                },
+                {
+                    "product_name": "Chef Anton's Gumbo Mix",
+                    "company_name": "New Orleans Cajun Delights"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 68.42199998209253,
+            "error": null,
+            "generated_row_count": 77,
+            "expected_row_count": 77,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_008",
+            "category": "join",
+            "question": "Find customers who bought products from the beverage category.",
+            "generated_sql": "SELECT DISTINCT c.customer_id, c.company_name, c.contact_name, c.contact_title, c.address, c.city, c.region, c.postal_code, c.country, c.phone, c.fax FROM customers c JOIN orders o ON c.customer_id = o.customer_id JOIN order_details od ON o.order_id = od.order_id JOIN products p ON od.product_id = p.product_id JOIN categories cat ON p.category_id = cat.category_id WHERE cat.category_name = 'Beverages'",
+            "expected_sql": "SELECT DISTINCT customers.company_name FROM customers JOIN orders ON customers.customer_id = orders.customer_id JOIN order_details ON orders.order_id = order_details.order_id JOIN products ON order_details.product_id = products.product_id JOIN categories ON products.category_id = categories.category_id WHERE categories.category_name = 'Beverages'",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "REGGC",
+                    "company_name": "Reggiani Caseifici",
+                    "contact_name": "Maurizio Moroni",
+                    "contact_title": "Sales Associate",
+                    "address": "Strada Provinciale 124",
+                    "city": "Reggio Emilia",
+                    "region": null,
+                    "postal_code": "42100",
+                    "country": "Italy",
+                    "phone": "0522-556721",
+                    "fax": "0522-556722"
+                },
+                {
+                    "customer_id": "HILAA",
+                    "company_name": "HILARION-Abastos",
+                    "contact_name": "Carlos Hernández",
+                    "contact_title": "Sales Representative",
+                    "address": "Carrera 22 con Ave. Carlos Soublette #8-35",
+                    "city": "San Cristóbal",
+                    "region": "Táchira",
+                    "postal_code": "5022",
+                    "country": "Venezuela",
+                    "phone": "(5) 555-1340",
+                    "fax": "(5) 555-1948"
+                },
+                {
+                    "customer_id": "BSBEV",
+                    "company_name": "B's Beverages",
+                    "contact_name": "Victoria Ashworth",
+                    "contact_title": "Sales Representative",
+                    "address": "Fauntleroy Circus",
+                    "city": "London",
+                    "region": null,
+                    "postal_code": "EC2 5NT",
+                    "country": "UK",
+                    "phone": "(171) 555-1212",
+                    "fax": null
+                },
+                {
+                    "customer_id": "BERGS",
+                    "company_name": "Berglunds snabbköp",
+                    "contact_name": "Christina Berglund",
+                    "contact_title": "Order Administrator",
+                    "address": "Berguvsvägen  8",
+                    "city": "Luleå",
+                    "region": null,
+                    "postal_code": "S-958 22",
+                    "country": "Sweden",
+                    "phone": "0921-12 34 65",
+                    "fax": "0921-12 34 67"
+                },
+                {
+                    "customer_id": "WANDK",
+                    "company_name": "Die Wandernde Kuh",
+                    "contact_name": "Rita Müller",
+                    "contact_title": "Sales Representative",
+                    "address": "Adenauerallee 900",
+                    "city": "Stuttgart",
+                    "region": null,
+                    "postal_code": "70563",
+                    "country": "Germany",
+                    "phone": "0711-020361",
+                    "fax": "0711-035428"
+                }
+            ],
+            "expected_rows": [
+                {
+                    "company_name": "Wilman Kala"
+                },
+                {
+                    "company_name": "Magazzini Alimentari Riuniti"
+                },
+                {
+                    "company_name": "The Cracker Box"
+                },
+                {
+                    "company_name": "Wellington Importadora"
+                },
+                {
+                    "company_name": "Let's Stop N Shop"
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 62.44019995210692,
+            "error": null,
+            "generated_row_count": 83,
+            "expected_row_count": 83,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
+        },
+        {
+            "case_id": "join_009",
+            "category": "join",
+            "question": "Which products were ordered more than 100 times?",
+            "generated_sql": "SELECT p.product_id, p.product_name, COUNT(*) AS order_count FROM order_details od JOIN products p ON od.product_id = p.product_id GROUP BY p.product_id, p.product_name HAVING COUNT(*) > 100",
+            "expected_sql": "SELECT products.product_name, COUNT(order_details.order_id) FROM products JOIN order_details ON products.product_id = order_details.product_id GROUP BY products.product_name HAVING COUNT(order_details.order_id) > 100",
+            "sql_correct": false,
+            "generated_rows": [],
+            "expected_rows": [],
+            "execution_success": true,
+            "execution_correct": true,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 59.796700021252036,
+            "error": null,
+            "generated_row_count": 0,
+            "expected_row_count": 0,
+            "generated_rows_truncated": false,
+            "expected_rows_truncated": false
+        },
+        {
+            "case_id": "join_010",
+            "category": "join",
+            "question": "What are the top customers by total spending?",
+            "generated_sql": "SELECT c.customer_id, SUM(od.unit_price * od.quantity * (1 - od.discount)) AS total_spending FROM customers c JOIN orders o ON c.customer_id = o.customer_id JOIN order_details od ON o.order_id = od.order_id GROUP BY c.customer_id ORDER BY total_spending DESC",
+            "expected_sql": "SELECT customers.company_name, SUM(order_details.unit_price * order_details.quantity) AS total_spent FROM customers JOIN orders ON customers.customer_id = orders.customer_id JOIN order_details ON orders.order_id = order_details.order_id GROUP BY customers.company_name ORDER BY total_spent DESC",
+            "sql_correct": false,
+            "generated_rows": [
+                {
+                    "customer_id": "QUICK",
+                    "total_spending": 110277.30503039382
+                },
+                {
+                    "customer_id": "ERNSH",
+                    "total_spending": 104874.97814367746
+                },
+                {
+                    "customer_id": "SAVEA",
+                    "total_spending": 104361.94954039395
+                },
+                {
+                    "customer_id": "RATTC",
+                    "total_spending": 51097.80082826822
+                },
+                {
+                    "customer_id": "HUNGO",
+                    "total_spending": 49979.90508149549
+                }
+            ],
+            "expected_rows": [
+                {
+                    "company_name": "QUICK-Stop",
+                    "total_spent": 117483.390147686
+                },
+                {
+                    "company_name": "Save-a-lot Markets",
+                    "total_spent": 115673.38964271545
+                },
+                {
+                    "company_name": "Ernst Handel",
+                    "total_spent": 113236.67978191376
+                },
+                {
+                    "company_name": "Hungry Owl All-Night Grocers",
+                    "total_spent": 57317.39016246796
+                },
+                {
+                    "company_name": "Rattlesnake Canyon Grocery",
+                    "total_spent": 52245.90034675598
+                }
+            ],
+            "execution_success": true,
+            "execution_correct": false,
+            "retry_used": false,
+            "retry_success": false,
+            "retry_count": 0,
+            "execution_time_ms": 66.23539997963235,
+            "error": null,
+            "generated_row_count": 89,
+            "expected_row_count": 89,
+            "generated_rows_truncated": true,
+            "expected_rows_truncated": true
         }
     ]
 }

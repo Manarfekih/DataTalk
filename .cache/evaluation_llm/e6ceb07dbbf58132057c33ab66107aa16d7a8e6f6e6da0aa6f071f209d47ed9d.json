@@ -1,0 +1,3 @@
+{
+  "sql_query": "SELECT AVG(units_in_stock) AS average_units_in_stock FROM products;"
+}
